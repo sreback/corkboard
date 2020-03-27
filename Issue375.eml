@@ -1,0 +1,2475 @@
+Delivered-To: lycralout@gmail.com
+Received: by 2002:ac9:216b:0:0:0:0:0 with SMTP id d43csp1137556oca;
+        Fri, 3 May 2019 14:07:45 -0700 (PDT)
+X-Google-Smtp-Source: APXvYqx0p0XOEi7kv93RZHs7uusuVkVPAFqvPrQxEi+2gI5mMf1tKMqKFYaSCU19rDFfyr2zuOld
+X-Received: by 2002:a81:598a:: with SMTP id n132mr9546466ywb.252.1556917664789;
+        Fri, 03 May 2019 14:07:44 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1556917664; cv=none;
+        d=google.com; s=arc-20160816;
+        b=AD31cOmECAEBIM9mWRBAdFaVXrbcm3NuX3ls2UEGiss+ANlGBY/3YLHS7q0x0MJuut
+         FY2HhC132AdsiFkHDZs6lX8LPy/hiML/JNsDHgvdCRdWtsVPJqpjexDDxttXeu/3X8mZ
+         Rvd/ZUPt2jakg1YjasW8oSjNBdx1XZo7tT3SpWT7ejNiIs/tWn4KDLKF3s9X/qagTNmo
+         H0thRXRLzr2JOZUvWW07kjCxL9BafhqYlkRpw10zIp7EG0q1gAA6kLkuPQrf2sbCcGbd
+         2Je7vs1V1/90AGVzkFMcJr6bpMBiLg57kqYd8G8i+61MwNtrBXVEpB14RdHkWuGr9M/K
+         ZT5A==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=mime-version:list-unsubscribe-post:list-unsubscribe:list-id
+         :feedback-id:message-id:date:to:reply-to:from:subject:dkim-signature
+         :dkim-signature;
+        bh=YH8UWHUcyKSRN2jb2B0zNl7NBNpna0oTbE6GBPCJT2Q=;
+        b=Jexo0QV1zPGJhdbtJEZTxAZOB9ACJDj6dxgb5P7jacE2CuH3AE8NF5hVMJ0NHePMRf
+         D8weLxI+zzM41/rR22NUx30nxnHLF++Z9MD2G9x5KzKelnSXCIU0psguQZB56Z7QIZoD
+         7FciOwnFrrAuLShEidx+9AhflK9gpRcG9JUaI12AaZfw279656S21mopLVV+bsCuRagM
+         8Qq2unfziQGcEGx+O6J0dH9Y3dVVav2r9oihRsP0BPKaMmZoHw8FXKEl4WQown1WgOlx
+         1+lllSrGIBRTu8pjcLjc/3zZ19pjEWcQRj2hvEL8umeCWEcQZX9CqlHCeq8QbL/Lmvkk
+         jLng==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.mcsv.net header.s=k1 header.b=rurKpe+z;
+       dkim=pass header.i=@mailchimpapp.net header.s=k1 header.b=qtEVPUY+;
+       spf=pass (google.com: domain of bounce-mc.us10_37626637.1572585-lycralout=gmail.com@mail243.suw101.mcdlv.net designates 198.2.184.243 as permitted sender) smtp.mailfrom="bounce-mc.us10_37626637.1572585-lycralout=gmail.com@mail243.suw101.mcdlv.net"
+Return-Path: <bounce-mc.us10_37626637.1572585-lycralout=gmail.com@mail243.suw101.mcdlv.net>
+Received: from mail243.suw101.mcdlv.net (mail243.suw101.mcdlv.net. [198.2.184.243])
+        by mx.google.com with ESMTPS id 81si1141890ybp.147.2019.05.03.14.07.44
+        for <lycralout@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128);
+        Fri, 03 May 2019 14:07:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of bounce-mc.us10_37626637.1572585-lycralout=gmail.com@mail243.suw101.mcdlv.net designates 198.2.184.243 as permitted sender) client-ip=198.2.184.243;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.mcsv.net header.s=k1 header.b=rurKpe+z;
+       dkim=pass header.i=@mailchimpapp.net header.s=k1 header.b=qtEVPUY+;
+       spf=pass (google.com: domain of bounce-mc.us10_37626637.1572585-lycralout=gmail.com@mail243.suw101.mcdlv.net designates 198.2.184.243 as permitted sender) smtp.mailfrom="bounce-mc.us10_37626637.1572585-lycralout=gmail.com@mail243.suw101.mcdlv.net"
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.mcsv.net;
+	s=k1; t=1556917650; bh=YH8UWHUcyKSRN2jb2B0zNl7NBNpna0oTbE6GBPCJT2Q=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:Feedback-ID:List-ID:
+	 List-Unsubscribe:Content-Type:MIME-Version;
+	b=rurKpe+z1PCvX15Qpnh2pbM1ys3AmHIpCQmYo/dtMYQhu+yiFICuCG0u0W/D+g4vp
+	 Cvg2BmcNnxdloUj9oqjrIRkTH58q0acdYI13oN3LeRzG5lyRGFhwdsG+Yt8/ENI7nb
+	 cwnh5nYWtS0QsYM2oZ0qTiP1JQJq4Jz5DDe2k4sY=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mailchimpapp.net;
+	s=k1; t=1556917650;
+	i=yossie=3D3Dyossiescorkboard.com@mailchimpapp.net;
+	bh=YH8UWHUcyKSRN2jb2B0zNl7NBNpna0oTbE6GBPCJT2Q=;
+	h=Subject:From:Reply-To:To:Date:Message-ID:List-ID:List-Unsubscribe:
+	 Content-Type:MIME-Version;
+	b=qtEVPUY+IiPPCCLGPqyqof7B0KoFALfagK0Umtot9Kst4+7sGyRHJQciSevrtQ8et
+	 zM5UXmzvBI4CfxAIg2KKCI4PJ5NlK20Tzfcg13aHaPPg2TmYc7Byl5JBIM/9MX1YTE
+	 9daCCfstEcHIxB9pXARpG9gq1VBc6VLOY+4wb3Dk=
+Received: from localhost (localhost [127.0.0.1])
+	by mail243.suw101.mcdlv.net (Mailchimp) with ESMTP id 44wl826R9SzJKFh1k
+	for <lycralout@gmail.com>; Fri,  3 May 2019 21:07:30 +0000 (GMT)
+x-mcpf-jobid: mc.us10_37626637.1572585.5cccad7928e8c.full_000001
+Subject: =?utf-8?Q?Yossie=27s=20Wine=20Recommendations=20#375=20=2D=20Orange=20is=20the=20new=20Black?=
+From: =?utf-8?Q?Yossie=20Horwitz?= <yossie@yossiescorkboard.com>
+Reply-To: =?utf-8?Q?Yossie=20Horwitz?= <yossie@yossiescorkboard.com>
+To: <lycralout@gmail.com>
+Date: Fri,  3 May 2019 21:07:25 +0000
+Message-ID: <4a8a53ce144d5f045511bf809.560aece2e5.20190503210711.27e2c21987.a4fcfb32@mail243.suw101.mcdlv.net>
+X-Mailer: MailChimp Mailer - **CID27e2c21987560aece2e5**
+X-Campaign: mailchimp4a8a53ce144d5f045511bf809.27e2c21987
+X-campaignid: mailchimp4a8a53ce144d5f045511bf809.27e2c21987
+X-Report-Abuse: Please report abuse for this campaign here: https://mailchimp.com/contact/abuse/?u=4a8a53ce144d5f045511bf809&id=27e2c21987&e=560aece2e5
+X-MC-User: 4a8a53ce144d5f045511bf809
+Feedback-ID: 37626637:37626637.1572585:us10:mc
+List-ID: 4a8a53ce144d5f045511bf809mc list <4a8a53ce144d5f045511bf809.15485.list-id.mcsv.net>
+X-Accounttype: pd
+List-Unsubscribe: <https://yossiescorkboard.us10.list-manage.com/unsubscribe?u=4a8a53ce144d5f045511bf809&id=48e1b2a353&e=560aece2e5&c=27e2c21987>, <mailto:unsubscribe-mc.us10_4a8a53ce144d5f045511bf809.27e2c21987-560aece2e5@mailin.mcsv.net?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Content-Type: multipart/alternative; boundary="_----------=_MCPart_1859836514"
+MIME-Version: 1.0
+
+This is a multi-part message in MIME format
+
+--_----------=_MCPart_1859836514
+Content-Type: text/plain; charset="utf-8"; format="fixed"
+Content-Transfer-Encoding: quoted-printable
+
+------------------------------------------------------------
+https://mailchi.mp/yossiescorkboard/yossies-wine-recommendations-375-orang=
+e-is-the-new-black?e=3D560aece2e5
+
+
+** Yossie=E2=80=99s Wine Recommendations (http://www.yossiescorkboard.com?=
+utm_source=3DYossie%27s+Wine+Recommendations&utm_campaign=3D27e2c21987-EMA=
+IL_CAMPAIGN_2019_05_03_08_25&utm_medium=3Demail&utm_term=3D0_48e1b2a353-27=
+e2c21987-11894221)
+------------------------------------------------------------
+
+
+** a weekly newsletter on Israeli and kosher wine=2C  wineries and other o=
+enophilic goodies
+------------------------------------------------------------
+------------------------------------------------------------
+I hope everyone had a great Pesach with plenty of great wines from the Pes=
+ach Guide (http://www.yossiescorkboard.com/2019-annual-pesach-buying-guide=
+/?utm_source=3DYossie%27s+Wine+Recommendations&utm_campaign=3D27e2c21987-E=
+MAIL_CAMPAIGN_2019_05_03_08_25&utm_medium=3Demail&utm_term=3D0_48e1b2a353-=
+27e2c21987-11894221) and at least a few Moshiach wines (http://www.=
+yossiescorkboard.com/glossary/?utm_source=3DYossie%27s+Wine+Recommendation=
+s&utm_campaign=3D27e2c21987-EMAIL_CAMPAIGN_2019_05_03_08_25&utm_medium=3De=
+mail&utm_term=3D0_48e1b2a353-27e2c21987-11894221#MoshiachWine) to e=
+nhance the incredible Festival of Freedom we just went through.
+
+With that endeavor behind me=2C we now return to our regular scheduled pro=
+gramming and this week we are discussing a very special winemaker of incre=
+dible depth=2C talent and modesty=2C who I am tremendously happy to see fi=
+nally getting his due.  Ever since Yaacov Oryah=E2=80=99s story graced the=
+se pages three years ago=2C his popularity has risen so dramatically as to=
+ render the =E2=80=9Cone of Israel=E2=80=99s best kept secrets=E2=80=9D mo=
+niker moot.  Given the dramatic increase both in Yaacov=E2=80=99s populari=
+ty and the number of new readers since that newsletter was published=2C I=
+ am including an updated version of the man=E2=80=99s history before getti=
+ng into his current focus=2C wines and plans for the future.  For those fa=
+miliar with the background=2C feel free to skip the next few paragraphs.
+
+Know Thy History
+Given how well I know Yaacov and his wines=2C it=E2=80=99s crazy to think=
+ that I didn=E2=80=99t meet Yaacov in person until January 2014=2C during=
+ the Sommelier Expo in Tel Aviv.  However=2C I have been tasting (and reco=
+mmending) his wines for year=E2=80=99s prior=2C ever since 2010 when someo=
+ne sent me a bottle of Asif Winery=E2=80=99s 2009 Chavlei Aretz Avant Gard=
+e=2C which was the same bottle that led me to delve deeper into the man be=
+hind the delicious wine.  The oddly-worded kashrut information on the bott=
+le=E2=80=99s label piqued my curiosity and ultimately led me to an article=
+ from 2006 in the Israeli culinary magazine =E2=80=9CWine and Gourmet=E2=
+=80=9D penned by Asif=E2=80=99s Orthodox winemaker (Yaacov)=2C which calle=
+d into question much of the practical halacha relating to the kashrut of w=
+ine.  In the same vein as Yaacov=E2=80=99s winemaking and overall philosop=
+hy of life=2C he was ahead of his times with views.  While these days his=
+ opinions are much more widely disseminated (in part due to the two in-dep=
+th and highly recommended books on the topic by Dr. Hayim
+Soloveitchik)=2C they remain outside of mainstream accepted halachik pract=
+ice.
+
+Yaacov was born in New York and made Aliyah with his charedi parents at th=
+e tender age of five where his family settled in Bnei Brak.  From a relati=
+vely early age his interests diverged somewhat from the mainstream charedi=
+ community he belonged to=2C joining Bnei Akiva as a teen-ager and fully b=
+reaking from tradition by studying in Yeshiva HaKotel under the auspices o=
+f the hesder program.  Despite being the first member of his extended fami=
+ly to serve in the army=2C following his service Yaacov returned to the fo=
+ld=2C got married=2C had children and=2C after spending some additional ti=
+me learning in various yeshivot=2C started working in construction while s=
+tudying toward an engineering degree.
+
+While wine was always of interest to him=2C his relationship with it was p=
+rimarily as an enthusiastic imbiber until 2003 when he discovered that Sor=
+ek Winery was offering entry-level winemaking classes.  Taking his first c=
+ourse in 2004 and leasing his first vineyard the year after=2C Yaacov quic=
+kly realized that his interest was far deeper than he had imagined.  In 20=
+06=2C together with a partner=2C he founded Asif Winery=2C initially inten=
+ding it to be a form of n=C3=A9gociant=2C only to realize that this tradit=
+ional French method of doing business in the wine industry was ill suited=
+ to the Israeli business climate where procuring raw materials of sufficie=
+nt quality was far more difficult than he had imagined.  It was at this po=
+int that Yaacov recognized his inner desire to create wine on his own and=
+=2C with Itai Lahat at his side as an advisor; Asif released its first vin=
+tage of approximately 15=2C000 bottles for the 2007 vintage.  Over the yea=
+rs production increased to about 20=2C000 bottles by the 2010
+vintage in addition to another 10=2C000 bottles or so made for private cli=
+ents under the auspices of the custom crush facility (which ironically was=
+ created to provide kosher crush facilities for winemakers that couldn=E2=
+=80=99t obtain kosher supervision).
+
+Religious Rumblings
+With economic realities dictating the winery=E2=80=99s move in 2008 from M=
+oshav Bnei Atarot to the southern city of Arad=2C the winery=E2=80=99s foc=
+us on true local desert terroir wines became another focus point for the w=
+inery.  It was at this time that the winery=E2=80=99s economic difficultie=
+s started. When located in Atarot=2C the winery=E2=80=99s hashgacha was un=
+der the local rabbanut=2C which enabled them to sell their wines to the ko=
+sher-observing public=2C which comprise the bulk of Israel=E2=80=99s wine=
+ consumer market.  However=2C the rabbanut=E2=80=99s office located in Ara=
+d had a rather negative view of Yaacov=E2=80=99s anti-establishment postur=
+e reflected in his aforementioned article and denied the fledgling winery=
+ a formal hashgacha.  By doing so=2C the rabbanut imperiled not only the w=
+inery=E2=80=99s sales but also its potential competitive advantage as a ko=
+sher custom crush winery=2C combining to eliminate much of its anticipated=
+ revenue.  All this despite the fact that that many kashrut-keeping Jews w=
+ho knew [and trusted] Yaacov happily drank his
+wines irrespective of his lacking a formal hashgacha.  This somewhat ludic=
+rous situation was the catalyst for the aforementioned language on Asif=E2=
+=80=99s bottles that stated that the wine was prepared in accordance with=
+ all applicable halachot and only by Jews.
+
+With his life choices already clearly establishing him as a maverick=2C it=
+ shouldn=E2=80=99t have surprised anyone that his wines showcased the same=
+ independent tendencies=2C with Asif focusing primarily on white wines.  W=
+ith rare clarity of vision=2C right off the bat Yaacov realized how approp=
+riate white wines were for Israel=E2=80=99s Mediterranean terroir long bef=
+ore it became our current mainstream thinking.  From his first days as a w=
+inemaker Yaacov has always focused his efforts on creating wines that he w=
+as intrigued by (and wanted to drink)=2C viewing them as objects of intell=
+ectual curiosity in addition to a pleasure-inducing beverage regardless of=
+ their perceived marketability.
+
+Waste Not=2C Want Not
+Ever since his early days learning about the winemaking process=2C Yaacov=
+ struggled with the standard practice of discarding the skins from grapes=
+ intended to make white wines immediately following press.  Given the high=
+ value placed on the tannin=2C flavor compounds and phenolic attributes co=
+ntributed by the skins during the red winemaking process=2C it seemed illo=
+gical to discard so much of the grape=E2=80=99s makeup when utilizing it t=
+o make white wine.  Starting with Asif=E2=80=99s first vintage in 2007=2C=
+ Yaacov was already experimenting with the fermentation of white grape var=
+ietals on their skins for periods far longer than the accepted few hours.=
+  It wasn=E2=80=99t until he turned out a commercial version of such a win=
+e for the 2010 vintage that he discovered there were others making these t=
+ypes of wines and Orange Wines (https://en.wikipedia.org/wiki/Skin-contact=
+_wine?utm_source=3DYossie%27s+Wine+Recommendations&utm_campaign=3D27e2c219=
+87-EMAIL_CAMPAIGN_2019_05_03_08_25&utm_medium=3Demail&utm_term=3D0_48e1b2a=
+353-27e2c21987-11894221) were an actual wine genre with an illustri=
+ous and ancient past (it was Daniel Rogov
+(http://www.yossiescorkboard.com/daniel-rogov-eulogies-videos/?utm_source=
+=3DYossie%27s+Wine+Recommendations&utm_campaign=3D27e2c21987-EMAIL_CAMPAIG=
+N_2019_05_03_08_25&utm_medium=3Demail&utm_term=3D0_48e1b2a353-27e2c21987-11894221) who informed him of this while tasting the aforementioned=
+ wine).  In those days Yaacov preferred to describe his wines as =E2=80=9C=
+white wines with extended skin maceration=E2=80=9D instead of Orange Wines=
+ (partially due to their lack of oxidation and the addition of sulfites)=
+=2C he has come around and refers to his current crop of ten(!) 2018 Orang=
+e Wines as such (more on that later).
+
+A Maverick in the Making
+While much easier to comprehend=2C another area in which Yaacov was a pion=
+eer early on is the focus on harvesting a percentage of his grapes early o=
+n and subsequently blending the juice with later harvested and fully ripen=
+ed grapes.  This is done to combat Israel=E2=80=99s hot weather while prov=
+iding his wines with the proper balance between phenolic ripeness=2C flavo=
+r compounds and sufficient acidity (I am continuously surprised at winemak=
+ers who don=E2=80=99t adapt this practice in some form).
+
+Intellectual and honest wines are always sought after and appreciated by w=
+ine geeks and Yaacov rapidly found favor and acceptance among Israel=E2=80=
+=99s wine cognoscenti.  His wines rapidly infiltrated the wine list of Isr=
+ael=E2=80=99s top [non-kosher] restaurants=2C while his white wines achie=
+ved near-cult status (and represented nearly 100% of Asif=E2=80=99s produc=
+tion from the 2009 vintage).  However=2C the lack of mainstream appeal (an=
+d extensive oak aging) that us wine geeks find so attractive in our wines=
+ is exactly the opposite of what any winery needs in order to be commercia=
+lly successful and intellectual curiosity and philosophical winemaking rar=
+ely translates into financial success.  The young winery rapidly found its=
+elf on unstable economic terms=2C leading it to search for a white knight=
+ financial backer who re-branded as Midbar after the desert terroir so cru=
+cial to the identity of its wines.  Unfortunately the new owners and Yaaco=
+v didn=E2=80=99t exactly see eye-to-eye on a number of fronts and Yaacov f=
+ound
+himself looking for a new gig that would hopefully allow him at least a ce=
+rtain level of creative freedom.
+
+A Harmonious Marriage
+As he searched for a replacement mainstream gig=2C Yaacov=E2=80=99s person=
+al winemaking continued unabated=2C with some of those creations reviewed=
+ below.  Starting in 2014 Yaacov assumed the position of Psagot=E2=80=99s=
+ chief winemaker and immediately started to make an impression=2C especial=
+ly (and unsurprisingly) with respect to Psagot=E2=80=99s white wines.  Des=
+pite Psagot being a large commercial winery=2C Yaacov has achieved a great=
+ middle ground between the requirement to produce commercially viable wine=
+s while imprinting his winemaking style and helping to further elevate Psa=
+got=E2=80=99s overall quality winemaking.  Additionally=2C with an arrange=
+ment similar to other winemakers at large commercial wineries=2C Yaacov is=
+ able to continue his intellectual winemaking under his own label and for=
+ others.  Examples of the numerous other winemakers with similar arrangeme=
+nts include Ido Lewinsohn (Barkan/Lewinsohn)=2C Kobi Arbiv (Recanati/Mia L=
+uce)=2C Jonathan Hajdu (Covenant/Hajdu) and Pierre Miodownick (Netofa/Nadi=
+v/Bordeaux).
+
+In addition to Psagot and his own wines discussed below=2C Yaacov spent a=
+ brief stint at Ella Valley Vineyards following the departure of Lin Gold=
+ (after filling in for her during her maternity leave)=2C but that stint w=
+as extremely short-lived with a negligible long-term impact on that strugg=
+ling winery and acts a consultant to a number of winemakers in a variety o=
+f ways (including Amos and Zwebner).  However=2C as Yaacov grows productio=
+n to meet his rising popularity he is cutting down on many of these consul=
+ting gigs in order to focus on a cohesive strategy for his brand.
+
+What=E2=80=99s in a Name
+Over the years Yaacov has produced a potpourri of wines including an annua=
+l red wine blend for the Claro (and now Brut) restaurants=2C a highly uniq=
+ue varietal S=C3=A9millon from 2009 (Valley of the Hunters after the Austr=
+alian Hunter Valley style Yaacov utilized)=2C two =E2=80=9CRioja-styled=E2=
+=80=9D wines (Iberian Dream)=2C a delightful GSM (Grenache=2C Syrah and Mo=
+urv=C3=A8dre) and one of most interesting (and delicious) kosher dessert w=
+ines I have ever tasted =E2=80=93 the Old Musketeer.  His playful=2C creat=
+ive and intellectual curiosity isn=E2=80=99t limited to Yaacov=E2=80=99s w=
+inemaking philosophy but carry over to the name of each wine he turns out.=
+  As you will see from the list below (and the explanations in the TNs)=2C=
+ each wine had a hidden meaning or play on words reflecting something abou=
+t the wine or its production.
+
+Starting with the 2014 vintage=2C Yaacov started a rebranding effort=2C co=
+nsolidating his wines under the current eponymous label=2C housing his ent=
+ire (growing) portfolio of wines and creating the Alpha Omega label=2C whi=
+ch now represents his entire line of Orange-styled wines.  The Greek equiv=
+alent of =E2=80=9Cfrom A to Z=2C=E2=80=9D the name refers to Yaacov=E2=80=
+=99s view that this style of winemaking yields the purest and most complet=
+e expression of the grape variety while also reflecting the utilization of=
+ the entire piece of fruit.  Over the years Yaacov has produced a large nu=
+mber of wines=2C with the ones produced under his own name / label listed=
+ in their entirety below.  As you can see=2C he has significantly ramped u=
+p production starting with the 2017 vintage=2C partially to meet increasin=
+g demand for his precise=2C elegant and intellectually stimulating wines.=
+  Don=E2=80=99t worry =E2=80=93 they are deliciously enjoyable as well!
+
+
+2008
+Old Musketeer
+
+2009
+Valley of the Hunters
+
+2011
+Iberian Dream Reserva (Rioja-styled wine)
+Iberian Dream Gran Reserva  (Rioja-styled wine)
+
+2013
+Claro (exclusive red blend for Claro)
+
+2014
+Alpha Omega (Orange-styled blend)
+Claro
+Eye of the Storm
+Pandora=E2=80=99s Riddle (exclusive red blend for Brut)
+
+2015
+Alpha Omega
+Claro
+Eye of the Storm
+Jemma (exclusive orange wine for Brut)
+
+2016
+Alpha Omega
+Jemma
+Light from Darkness
+Pandora=E2=80=99s Riddle
+Timrot Ashan (exclusive red blend for Brut)
+
+2017
+Alpha Omega Label: Chenin Blanc and Melchizedek (NYR)
+Alpha Omega Jemma (NYR)
+Eye of the Storm (NYR)
+Light from Darkness (blanc de noir (https://www.mcgill.ca/oss/article/you-=
+asked/what-does-blanc-de-noirs-mean-when-referring-wine?utm_source=3DYossi=
+e%27s+Wine+Recommendations&utm_campaign=3D27e2c21987-EMAIL_CAMPAIGN_2019_0=
+5_03_08_25&utm_medium=3Demail&utm_term=3D0_48e1b2a353-27e2c21987-11894221) ))=2C
+Saign=C3=A9e d=E2=80=99Orange
+Silent Hunter
+SOB (=E2=80=9CSpecial Oryah Blend=E2=80=9D) (private blend also available=
+ from Yaacov) (not yet released (=E2=80=9CNYR=E2=80=9D))
+The Duke Pontiff (previously Pandora=E2=80=99s Riddle but now also availab=
+le from Yaacov)
+Timrot Ashan (NYR)
+Valley of the Hunters (NYR)
+
+2018
+Alpha Omega Varietals:  Chardonnay=2C Chenin Blanc=2C Gew=C3=BCrztraminer=
+=2C Semillon=2C Roussanne=2C Viognier
+Alpha Omega Blends: Melchizedek (NYR)=2C Anthology of Spice=2C The First A=
+nthology
+Alpha Omega Jemma (NYR)
+Eye of the Storm (NYR)
+Iberian Dream Reserva (NYR)
+Light from Darkness
+Pretty as the Moon (Ros=C3=A9)
+Silent Hunter
+SOB (NYR)
+Soul Mate
+The Duke Pontiff (NYR)
+Timrot Ashan (NYR)
+Valley of the Hunters (NYR)
+
+
+Word to the Wise
+Wine geeks are always on the lookout for new and interesting things=2C whi=
+ch is one of the many reasons Yaacov=E2=80=99s wines rapidly gained favor=
+ and near-cult status among Israel=E2=80=99s wine-drinking elite (precise=
+ winemaking=2C meticulous care=2C creativity and obvious talent played a b=
+ig part here as well).  However=2C other than a few wines=2C they aren=E2=
+=80=99t mainstream wines and can be difficult to appreciate=2C especially=
+ for those weaned on fruit-forward=2C big=2C bold and alcoholic wines with=
+ plenty of oak.  Given his desire to allow the fruit to lead the way and a=
+ propensity to harvest early=2C maintain acidity and use oak only as and w=
+hen required=2C many of the wines can be confusing to comprehend=2C gettin=
+g in the way of a wine=E2=80=99s primary purpose =E2=80=93 to provide plea=
+sure.  Even those who have turned the corner and love refreshing and crisp=
+ whites won=E2=80=99t find what they are looking for in Orange wines=2C wh=
+ose funkiness and subdued flavors provide contra to the acidity and preven=
+t it from screaming across your palate (it=E2=80=99s
+there in spades and necessary to balance the heft).  Other than Yaacov=E2=
+=80=99s multiple Orange-styled creations=2C the kosher wine world still ha=
+s limited options with only a few other options including offerings from B=
+at Shlomo=2C Hajdu and Herzog.
+
+Interestingly=2C those not yet into wines can find orange-styled wines enj=
+oyable as they are neither heavily tannic like many newly-released red win=
+es or overly astringent like so many of today=E2=80=99s white wines while=
+ providing subdued honeyed fruit notes with sour undertones.  From Yaacov=
+=E2=80=99s perspective=2C the wines are there to stimulate thought=2C conv=
+ersation and wonderment while also providing pleasure.  For the most part=
+=2C the wines range between 11% - 13% AbV=2C a rarity for Israeli wines an=
+d nearly all of them benefit from time and quiet contemplation.  This does=
+n=E2=80=99t mean they don=E2=80=99t provide immense pleasure as enjoyable=
+ wines=2C but rather they are intellectual wines with a whole additional s=
+ide of contemplation waiting to be discovered.  Either way=2C all the wine=
+s are highly recommended and=2C like most other wines=2C will be much more=
+ enjoyable with a few friends while tasting a number of them side by side=
+ and comparing notes.
+
+Personally=2C tasting through ten Orange wines from one vintage across mul=
+tiple varietals (and even winemaking styles) was fascinating and doing so=
+ together with Yaacov increased my pleasure=2C enjoyment and the education=
+al aspect of the tasting tenfold.  Given Yaacov=E2=80=99s goal of expressi=
+ng the complete essence of the varietal it would have been really cool to=
+ taste the same varietal wine in both Orange-style and as a straight wine=
+=2C but 40 wines would likely have been too much for him=2C especially giv=
+en his duties as Psagot=E2=80=99s chief winemaker (food for thought Yaacov=
+).
+
+Fresh off the Boat
+After years of reigning supreme on the =E2=80=9CIsrael Only=E2=80=9D list=
+=2C a number of Yaacov=E2=80=99s wines are being imported into the US by L=
+iquid Kosher and should be available soon directly from the importer.  Oth=
+erwise=2C all of the wines are available in Israel directly from Yaacov (Y=
+aacov.oryah@gmail.com (mailto:Yaacov.oryah@gmail.com) ).  As I hope has be=
+en conveyed through this newsletter (and the tasting notes below) =E2=80=
+=93 all are highly recommended (with respect to the Alpha Omega wines=2C s=
+ubject to how your palate feels about the style) and are available in rela=
+tively limited quantities.
+
+The Man behind the Mission
+Each of his wines speaks for themselves as a stand-alone masterpiece of pr=
+ecision and creative winemaking.  However=2C despite all the ink poured un=
+til now=2C one would walk away missing a significant part of the picture i=
+f I wasn=E2=80=99t to briefly say a few words about the individual behind=
+ the wines.  Easily one of the most understated personalities in the Israe=
+li wine world=2C Yaacov projects a quiet contemplation that belies an imme=
+nse intellectual curiosity that knows no bounds.  Powerfully charismatic=
+=2C Yaacov is a lover of men and strongly believes in engaging with people=
+ from all walks of life=2C while striving to focus on that which unites us=
+ instead of what divides us.  His intellectual curiosity=2C powerful chari=
+sma and tremendous humility make him one of the most enjoyable people with=
+ whom to spend time.  I always feel that I=E2=80=99d rather be talking abo=
+ut ten different things in addition to the wine-related topics we inevitab=
+ly gravitate towards.  He is a true renaissance man and despite knowledge
+across a wide-ranging array of topics=2C he is always thinking=2C explorin=
+g and striving to do more=2C making his a great person to hang out with=2C=
+ talk to and learn from.
+
+The dualities of making wine for the general public at Psagot while creati=
+ng contemplative and serious wines that demand your attention under his ep=
+onymous label are only reconcilable in an individual as unique as he is. =
+ As such=2C this newsletter represents a rare instance where knowing a bit=
+ about the man is a pre-requisite to enjoying and understanding the wines.=
+  I highly recommend taking the time to seek him out=2C taste his wines an=
+d spend some time with Yaacov Oryah.  I have and continue to learn much fr=
+om him and hope your encounters with Yaacov and his wines will lead you to=
+ appreciate his talents as much as I do!
+
+Shabbat Shalom=2C
+Yossie
+
+2018
+
+Yaacov Oryah=2C Pretty as the Moon (Yafa K=E2=80=99Levana)=2C Ros=C3=A9=2C=
+ 2018:  Have no fear =E2=80=93 being one of the least likely winemakers to=
+ follow any sort of trend=2C Yaacov hasn=E2=80=99t succumbed to the prevai=
+ling winds of rose =E2=80=93 the wine is a mistake of sorts=2C as ever-so-=
+subtlety indicated by the play on words in the wine=E2=80=99s name.  A ble=
+nd of Petite Sirah (53%)=2C Mourv=C3=A8dre (29%) and Syrah (18%) that was=
+ intended to be a blanc de noir but turned out as a rose de noir instead.=
+  Levana is Hebrew for the moon and the female form of the color white=2C=
+ reflecting the fact that the wine is a great as the white wine it was int=
+ended to be.  The wine has a subtle nose of dark red fruit including tart=
+ raspberries and pomegranate along with some funky minerals=2C slate and h=
+eather notes.  The medium bodied palate is loaded with bright acidity that=
+ is nicely balanced with the slightly hefty fruit=2C more minerals and a s=
+treak of slightly bitter salinity that carries through the lingering finis=
+h.  A delicious and easy to drink wine
+with enough complexity to please the more discerning wine lovers as well.=
+  13% AbV. Drink now and over the next 9-15 months or so.
+
+Yaacov Oryah=2C Alpha Omega=2C Chardonnay=2C 2018:  100% unoaked Chardonna=
+y which spent 2.5 weeks macerating on its skins.  Like many orange-styled=
+ wines=2C the nose is on the subtle side with lovely green apples=2C warm=
+ spices and herbal notes along with plenty of flinty minerals=2C much of w=
+hich is present on the medium bodied palate that needs some air to open up=
+=2E  Floral notes and jasmine combine with the tart green apples=2C quince a=
+nd more minerals with good balancing acidity keeping things honest.  Great=
+ balance reflects Yaacov=E2=80=99s precise winemaking skills.  13% AbV.  D=
+rink now through 2023.
+
+Yaacov Oryah=2C Alpha Omega=2C Chenin Blanc=2C 2018:  Together with S=C3=
+=A9millon=2C Chenin Blanc seems to be the wine with which Yaacov creates t=
+he most powerful magic and is also the best suited for the Orange-treatmen=
+t.  A beautiful nose redolent with fresh and vibrant sweet apple=2C pear a=
+nd some floral notes that overwhelm initially but settle down nicely with=
+ a bit of air (a prerequisite for nearly all the Orange-styled wines I hav=
+e tasted) and play nicely with the fruit which is enhanced by lovely flint=
+y minerals=2C hints of smoke=2C heather and lovely citrus nose together wi=
+th the characteristic oxidized funkiness that adds pleasing complexity and=
+ character.  The medium bodied palate has loads more fruit which is tamed=
+ by rich mineral notes=2C more smoke and sweet herbs=2C with floral notes=
+ leading the way to the lingering finish.  Drink now (with 30-45 minutes o=
+f air) through 2024.
+
+Yaacov Oryah=2C Alpha Omega=2C Gew=C3=BCrztraminer=2C 2018:  100% Gew=C3=
+=BCrztraminer sourced from the same vineyard as the Chardonnay above=2C th=
+e wine spent 2.5 weeks macerating on its skins and presents in a pale pink=
+ salmon color derived from the unique color hue of the grape=E2=80=99s ski=
+ns.  Characteristic of the grape=2C the nose is highly aromatic with plent=
+y of lavender=2C rose hips=2C floral notes=2C tropical fruit and orange ci=
+trus notes along with the typical lychee notes=2C plenty of warm spice and=
+ a hint of smoke.  The medium bodied palate is still tight but with air re=
+veals loads more spice and tropical fruits including pineapple=2C more swe=
+et citrus and slate minerals together with a subtle bitter herbal streak t=
+hat adds complexity.  Supremely well balanced with great acid backing it u=
+p=2C over time the abundant floral notes fade to reveal more traditional G=
+ewurz notes.  Drink now (with 30 minutes of air) through 2022=2C maybe lon=
+ger.
+
+Yaacov Oryah=2C Alpha Omega=2C Roussanne=2C 2018:  Like most of Yaacov=E2=
+=80=99s 2018 Orange-styled wines=2C at this stage the wine is closed and t=
+ight=2C requiring some air time to reveal the secrets beneath.  Pears=2C h=
+eather=2C honeysuckle=2C warm spices and citrus notes dominate the nose to=
+gether with flinty minerals.  The medium bodied palate showcases far more=
+ tannin and power than the Chardonnay and S=C3=A9millon.  The wine is lean=
+=2C subtle=2C and austere with incredible balance between the great acidit=
+y=2C deep fruit and complexity granted by the minerals and smoky overlay.=
+  Really a lovely wine whose development I am excited to follow over the y=
+ears.  If this is the =E2=80=9Cessence=E2=80=9D of Roussanne=2C sign me up=
+!  Drink now through 2023=2C likely longer.
+
+Yaacov Oryah=2C Alpha Omega=2C S=C3=A9millon=2C 2018:  Reflecting the vine=
+yard=E2=80=99s quality and Yaacov=E2=80=99s expertise with (and love for)=
+ the grape=2C this is one of my favorite Orange wines yet.  An expansive n=
+ose is loaded with funky oxidized nose backing up tart green apples=2C lem=
+on and orange citrus=2C slate minerals=2C brown spices and honeyed notes.=
+  The medium bodied palate is slightly oily and viscous and needs plenty o=
+f air to open up but once it does you are rewarded with honeyed fruit kept=
+ in check with good acidity=2C elegant tannins=2C more citrus and minerals=
+=2E  Delicious now=2C complexity will come with age so give this one the tim=
+e is deserves and wait at least 12 months before opening and then enjoy th=
+rough 2026=2C likely longer.
+
+Yaacov Oryah=2C Alpha Omega=2C Viognier=2C 2018:  Sourced from a Northern=
+ vineyard located near Har Tavor=2C the wine showcases the traditional Vio=
+gnier characteristics and presents as a delicious=2C approachable=2C round=
+ and mouth-filling wine with lovely peach=2C apricot and other tropical fr=
+uits joined by floral notes=2C warm spices and backed by great acidity.  T=
+he medium bodied palate is still closed but really opened up as the wine w=
+armed in the glass and after 45 minutes layers of complex flavors were rev=
+ealed including roasted hazelnuts=2C smoky oak=2C brown spices and flinty=
+ minerals; while the wine remained a delightful simple pleasure to drink.=
+  Drink now through 2021=2C maybe longer.
+
+Yaacov Oryah=2C Alpha Omega=2C The First Anthology (HaAsufa HaRishona)=2C=
+ 2018:  As alluded to by the name=2C the wine pays homage to Yaacov=E2=80=
+=99s first Orange wine =E2=80=93 the 2007 Asif mentioned above (Asufa and=
+ Asif share the same root in Hebrew).  Utilizing the same varietals as tha=
+t initial blend =E2=80=93 Chardonnay=2C Viognier and Chenin Blanc (albeit=
+ in different percentages =E2=80=93 40%=2C 40% and 20% respectively)=2C th=
+e components are comprised of the varietal Alpha Omega Orange-styled wines=
+ listed above.  A subdued nose has plenty of yellow sweet apple and pears=
+ along with warm spice.  The medium bodied palate has plenty of sweet frui=
+t=2C baked apple pie=2C flinty minerals on a background of cloves and more=
+ minerals and backed by good acidity=2C elegant subtle tannins and sweet h=
+erbs.  powerful and elegant=2C the wine is lithe and precise with citrus a=
+nd earthy notes lingering long.  Drink now through 2023.
+
+Yaacov Oryah=2C Alpha Omega=2C Anthology of Spice (Asofat HaTavlin)=2C 201=
+8:  A blend of Gewurztraminer (50%)=2C Chardonnay (40%) and Roussanne (10%=
+) but=2C unlike the First Anthology=2C here the Gewurztraminer is not the=
+ same one used in the Alpha Omega above but rather a different=2C wildly a=
+romatic version (also made Orange-style and then blended with the other co=
+mponents.  Sweet and extremely well made with Yaacov=E2=80=99s characteris=
+tic precise winemaking=2C with the spicy Gew=C3=BCrztraminer notes dominat=
+ing.  The expressive nose needs some air to open up but then you are rewar=
+ded with heady floral notes=2C rose hips and awesome spice=2C all grounded=
+ by the Orange-oxidized funk=2C minerals and a subtle smoky note that adds=
+ complexity.  The medium to full-bodied palate has nicely integrated tanni=
+ns and a good acidic core providing backbone to the heady spice and floral=
+ notes.  Gun smoke=2C flint and some sweet fruit linger long.  Give this o=
+ne the time is needs and deserves=2C whether opening now or waiting 12 mon=
+ths
+before enjoying through 2026.
+
+Ya=E2=80=99acov Oryah=2C Light from Darkness (Or M=E2=80=99Ofel)=2C 2018:=
+  A blend of 33% Grenache=2C 31% Cinsault=2C 24% Syrah=2C and 12% Mourv=C3=
+=A8dre=2C the wine=E2=80=99s name basically means blanc de noir (Light (wi=
+ne) from Darkness (grapes)).  The wine was made with no skin contact or ma=
+lolactic fermentation=2C which allowed for a fresh and vibrant wine.  Harv=
+ested early=2C the wine clocks in at 11.5% AbV.  Plenty of red fruit and f=
+loral notes on both the nose and palate along with rich minerals=2C near-s=
+weet tropical fruit with plenty of lip-smacking acidity.  With air=2C the=
+ wine opens up to reveal layers of complexity along with freshly dried hay=
+ and herbal notes.  Drink now through 2021.
+
+Ya=E2=80=99acov Oryah=2C Silent Hunter (HaTzayad HaShaket)=2C 2018:  The w=
+ine=E2=80=99s name alludes to Australia=E2=80=99s Hunter Valley =E2=80=93=
+ home to some of the longest-lasting (and most interesting) expressions of=
+ Semillon out there=2C with the silence referring to the Chenin=E2=80=99s=
+ dominance in the blend (despite the lower percentage).  A blend of Semill=
+on (60%) and Chenin Blanc (40%)=2C the Chenin adds significant heft (and s=
+ome floral perfume) without taking away from the heather and mineral notes=
+ the Semillon brings to the table.  The expressive nose is clean=2C precis=
+e and elegant with near-sweet fruit balanced with saline minerals=2C gun s=
+moke=2C flint and creamy citrus notes.  The medium bodied palate is loaded=
+ with acid that provides perfect contra to the rich fruit=2C slate mineral=
+s and lip-smacking citrus that evolves throughout the long mid-palate into=
+ the long lingering finish.  I enjoyed this wine=E2=80=99s evolution over=
+ seven hours and it wasn=E2=80=99t close to being done.  Highly enjoyable=
+ now but with so much hidden potential ahead
+of it=2C it=E2=80=99s almost criminal to open it now=2C but if you must ma=
+ke sure it gets at least two hours in the decanter.  Better to wait 12-18=
+ months before enjoying through 2025=2C maybe longer.  11.5% AbV.
+
+Ya=E2=80=99acov Oryah=2C Soulmate (Ezer K=E2=80=99Negdo)=2C 2018:  the win=
+e=E2=80=99s name has a dual meaning=2C reflecting how the perfect mate cre=
+ates a sum greater than its part but also pays homage to Yaacov=E2=80=99s=
+ wife Patricia who convinced him to use the varietal in the blend=2C which=
+ resulted in this delightfully delicious wine.  A blend of Chardonnay (55%=
+) and Chenin Blanc (45%)=2C the Chardonnay is sourced from a plot shared w=
+ith Domaine du Castel and Vitkin.  Great viscosity=2C medium bodied with h=
+ints of tropical fruit with plenty of clean minerals and warm spices galor=
+e. Fresh and vibrant with clean lines and hefty fruit from the Chardonnay.=
+  Red grapefruit=2C Mayer lemon and plenty of floral notes provide the ove=
+r-arching notes with the minerals and acid providing the underlying backgr=
+ound that carries the wine through.  Lithe and delicious=2C the wine is hi=
+ghly enjoyable.  12.5% AbV.  Drink now through 2021.
+
+2017
+
+Yaacov Oryah=2C Alpha Omega=2C Chenin Blanc=2C 2017:  The wine opens with=
+ a near-sweet and expressive nose of heather honeysuckle dominating but al=
+so sweet orange citrus notes=2C pineapple and some yellow pears.  The rich=
+ nose leads your expectations toward a full and juicy near-sweet wine befo=
+re the medium bodied and slightly viscous wine hits your palate.  There is=
+ a complete dissonance between what the nose led you to expect and the lea=
+n=2C subtle and complex palate your mouth experiences =E2=80=93 crazy expe=
+rience.  That said=2C ignoring the false expectations from the nose=2C the=
+ wine is round and mouth-filling with great balancing acidity and subtle f=
+ruit augmented by rich flint minerals=2C saline tannin=2C roasted nuts=2C=
+ black tea and bitter orange pith.  Medium to full bodied with a nice heft=
+ and nuanced complexity on clean lines and superb balance.  Varietal chara=
+cteristics of the Chenin are more evident after 30 minutes of air and are=
+ pronounced on the mid palate and lingering finish.  11.5% AbV=2C drink no=
+w
+through 2023.
+
+Yaacov Oryah=2C Eye of the Storm (Ein HaSa=E2=80=99ara)=2C 2017 [Advance=
+ Tasting]:  The wine=E2=80=99s name is a nod toward to storm that was Yaac=
+ov=E2=80=99s personal life for some time with grapes=2C the vineyard and w=
+inemaking keeping him grounded.  Very similar to the 2016 version below=2C=
+ the wine is a blend of Syrah (42%)=2C Grenache (36%)=2C Mourv=C3=A8dre (1=
+1%) and Cinsault (11%).  However the 2017 saw a small percentage of new oa=
+k during the 12 month barrel-aging process and showcases darker fruit that=
+=2C even though seems riper is more controlled with the wine presenting cl=
+ean lines=2C tight structure and well balanced between the rich dark red f=
+ruit=2C good acidity and near-elegant tannins. Red plums=2C sour cherries=
+ and some currents are augmented with fresh-paved road=2C graphite and roa=
+sted meat=2C combined with an herbal underlay and backed by savory and gri=
+pping tannins. Drink now through 2023.
+
+Ya=E2=80=99acov Oryah=2C Light from Darkness (Or M=E2=80=99Ofel)=2C 2017:=
+ In addition to the Grenache Noir=2C Cinsault=2C Syrah=2C and Mourv=C3=A8d=
+re included in the 2018 blend above=2C this wine included Tempranillo as w=
+ell.  The wine=E2=80=99s name is basically Hebrew for blanc de noir (Light=
+ (wine) from Darkness (grapes)).  More fruit forward and approachable than=
+ the 2016 below=2C the wine has lovely notes of tropical fruit=2C melon an=
+d citrus with less red fruit.  A highly aromatic nose and medium bodied pa=
+late are both loaded to bear with citrus galore=2C slate minerals and some=
+ stone summer fruits all backed with judicious acid impeccably balanced wi=
+th the rich and slightly viscous fruit and hefty dose of minerals.  11%AbV=
+=2E  Drink now through 2022.
+
+Yaacov Oryah=2C Saign=C3=A9e d=E2=80=99Orange=2C 2017:  Bled from the Alph=
+a Omega Chenin Blanc above=2C the wine is 100% Chenin Blanc.  When bleedin=
+g the juice of red grapes=2C the result is a Rose while bleeding the juice=
+ of a white grape yielded a wine that tastes like an orange wine while pre=
+senting like a white one.  Pronounced funk and the subtle viscosity of Yaa=
+cov=E2=80=99s orange wines=2C the wine showcases floral and mineral notes=
+ with the fruit subdued in the background.  Nicely balancing acidity and s=
+picy ginger notes round out the wine and give it some welcome complexity.=
+  11.5% AbV.  Drink now.
+
+Ya=E2=80=99acov Oryah=2C Silent Hunter (HaTzayad HaShaket)=2C 2017: The wi=
+ne is an unoaked blend of 60% S=C3=A9millon and 40% Chenin Blanc (the two=
+ varietals that Ya=E2=80=99acov does best with) and the name is a nod to A=
+ustralia=E2=80=99s Hunter Valley whose S=C3=A9millon wines have extensive=
+ aging abilities (Yaacov=E2=80=99s 2009 =E2=80=9CValley of the Hunters=E2=
+=80=9D was made in that style=2C as is his not-yet-released 2017 version).=
+ The wine was allowed to go through full malolactic fermentation that yiel=
+ded a rich and unctuous wine=2C with plenty of delicious fruit kept in che=
+ck by great tempering acidity. Loads of flinty minerals are accompanied by=
+ subtle tropical fruit=2C dried summer stone fruit=2C heather and honeysuc=
+kle=2C along with some spice=2C pear and ginger.  Lemon zest and more citr=
+us are enhance by pleasing notes of white flowers=2C lemongrass=2C all wel=
+l-balanced by bracing acidity that ensures this rich and lovely wine stays=
+ crisp=2C vibrant and refreshing all the way through the medium bodied pal=
+ate to the long lingering and citrus-laden finish.
+Really a complex wine that is worth your time and patience to open up in t=
+he glass. Part of the wine was also made into a sparkling wine=2C so stay=
+ tuned for some exciting sparklers coming from Ya=E2=80=99acov in a few ye=
+ars. At 11% AbV=2C the wine is great all day=2C every day and while it can=
+ be enjoyed mindlessly=2C denying the wine some thoughtful contemplation w=
+ould be missing out on a huge part of the experience. While enjoyable now=
+=2C the wine has tons of evolution ahead of it=2C so I=E2=80=99d suggest c=
+ellaring a few of your bottles to enjoy over the years through 2028=2C lik=
+ely longer.
+
+Yaacov Oryah=2C SOB=2C 2017 [Advance Tasting]:  The wine is a private bot=
+tling and Yaacov kept one barrel for himself.  An eccentric blend of Grena=
+che (22%)=2C Petite Sirah (21%)=2C Carignan (20%)=2C Pinot Noir (19%) and=
+ Syrah (18%)=2C each component was added for a specific purpose.  The wine=
+ is obviously super young and needs time to come together.  At this point=
+ there is plenty of ripe red fruit on both the nose and palate alongside t=
+oasty oak (the wine was aged in one new 300 liter barrel and two one-year=
+ old barrels) and nice earthy minerals.  The medium bodied palate is backe=
+d by gripping elegant tannins=2C with good acidity keeping things lively.=
+  Fruit forward and fun at this point=2C I=E2=80=99d give the wine at leas=
+t a year before opening=2C after which is should cellar through 2022=2C li=
+kely longer (given the uniqueness of the blend=2C I am erring on the side=
+ of caution here).
+
+Yaacov Oryah=2C The Duke Pontiff=2C 2017 [Advance Tasting]:  Another wine=
+ name benefiting Yaacov=E2=80=99s playful curiosity=2C the Duke refers to=
+ the Duchy of Burgundy (mailto:https://en.wikipedia.org/wiki/Duchy_of_Burg=
+undy) which is represented by the Pinot Noir in the blend while Pontiff re=
+fers to the Ch=C3=A2teauneuf-du-Pape (mailto:Ch%C3%A2teauneuf-du-Pape) app=
+ellation=2C whose style of wine is emulated in this blend of Rhone and Bur=
+gundy varietals (Pinot Noir (49%)=2C Syrah (21%)=2C Grenache (18%)=2C Mour=
+v=C3=A8dre (6%)=2C and Cinsault (6%)).  The wine spent 12 months aging as=
+ a blend on one year oak and presents with rich ripe red fruit=2C earthy m=
+inerals=2C some blueberries while the oak dominates more than many of Yaac=
+ov=E2=80=99s other wines.  Good acidity=2C gripping tannins give the mediu=
+m to full bodied wine great structure with tart red fruit=2C a pleasing bi=
+tter herbal underlay joined with rich dark chocolate=2C freshly cured toba=
+cco leaf and some minty notes on the medium finish.  That said=2C the wine=
+ is far from ready and the
+oak will integrate over the next 12-8 months so make sure to give it the t=
+ime it deserves and then enjoy through 2022.
+
+2016
+
+Yaacov Oryah=2C Alpha Omega=2C 2016:  A blend of Roussanne=2C Semillon=2C=
+ and Viognier which spent three weeks macerating on its skins and 12 month=
+s aging in three-year old oak barrels (which were used as new oak for the=
+ 2014 Alpha Omega).  The rich and somewhat extracted wine has a lovely nos=
+e of sweet tropical fruits including guava and pineapple alongside gobs of=
+ juicy citrus notes=2C slate minerals=2C blooming white flowers=2C brown s=
+pices and some caramel.  The medium bodied palate has more rich fruit with=
+ plenty of citrus and sweet minerals backed by great acidity and an impecc=
+ably balanced structure.  Tight and focused with precise fruit and a pleas=
+ing roundness to it=2C the wine is enjoyable now and benefits from about 4=
+5 minutes of air and should cellar nicely through 2024.
+
+Yaacov Oryah=2C Alpha Omega=2C Jemma=2C Brut=2C 2016:  Made exclusively fo=
+r the Tel-Aviv restaurant Brut (with whom Yaacov has a close relationship)=
+ and named for the eatery=E2=80=99s co-founder =E2=80=93 Jemma Naveh.  An=
+ Orange-styled wine made from 100% Semillon=2C the wine needs hours and ho=
+urs of air and is enjoyable every step of the way while being educational=
+ as well.  With a plush medium to full-bodied palate=2C the wine showcases=
+ loads of warm spices=2C roasted nuts=2C fresh-turned earth and earthy min=
+eral notes under plenty of funky orange notes=2C wild mushrooms=2C smoke=
+=2C candied almonds=2C smoky wood=2C and dried tropical fruit.  Spice and=
+ dried nuts linger long with brilliant acidity keeping things interesting.=
+  Really interesting and enjoyable wine that will pair well with a near-en=
+dless array of foods.  Drink now through 2021.
+
+Yaacov Oryah=2C Eye of the Storm (Ein HaSa=E2=80=99ara)=2C 2016:  Yaacov=
+=E2=80=99s GSM has become a regular part of his portfolio and the 2016 is=
+ more reminiscent of his delightful 2016 than the 2015 version.  The wine=
+ spent 12 months in oak given it some pleasing smoky notes in addition to=
+ the rich red fruit (which was slightly ripe for me without being sweet)=
+=2C backed by gripping tannins that need time to integrate and good acidit=
+y keeping the fruit well balanced while the oak remains in the background.=
+  Savory notes of roasted meat=2C asphalt and leather are joined by earthy=
+ minerals=2C freshly cracked black pepper=2C earthy minerals and some herb=
+al notes all blend together and yield a food-friendly wine with more mains=
+tream appeal that many of Yaacov=E2=80=99s other wines.  13.5% AbV. Drink=
+ now through 2023.
+
+Ya=E2=80=99acov Oryah=2C Light from Darkness (Or M=E2=80=99Ofel)=2C 2016:=
+ Maintaining a reputation for quality experimentation=2C the wine=E2=80=99=
+s name reflects the creating of a white wine from three Rh=C3=B4ne Valley=
+ red varietals (Grenache=2C Cinsault and Mourv=C3=A8dre)=2C accomplished b=
+y not allowing the juice any skin contact whatsoever (all grape juices are=
+ clear =E2=80=93 the color comes from skin=2C stems and other parts). As a=
+ wine geek I am always excited to taste wines made in a new or interesting=
+ manner=2C many of which aren=E2=80=99t the most delicious of options and=
+ I was happy to find this wine didn=E2=80=99t fit into that category =E2=
+=80=93 it=E2=80=99s really a yummy wine (in addition to the coolness of ha=
+ving typical red wine notes in a white wine). The nose is redolent with mu=
+lberry=2C raspberry=2C red cherry along with white flowers=2C red grapefru=
+it and lime with a hint of bitter green and flinty minerals. The medium to=
+ full bodied palate is more robust than you=E2=80=99d expect with great ac=
+idity balancing out the rich and deep fruits with plentiful lip-smacking c
+itrus and savory minerals on the mid palate leading into the lingering fin=
+ish where some bitter grapefruit pith leaves a tantalizing reminder of the=
+ delicious treat. 11.5% AbV.  Enjoyable now through the middle of 2019.
+
+2014
+Yaacov Oryah=2C Alpha Omega=2C 2014:  A limited edition (less than 300 bot=
+tles) blend of Roussanne=2C Viognier and S=C3=A9millon that was prepared l=
+ike an Orange Wine and was allowed to macerate on its skins for over two m=
+onths (73 days) yielding a rich=2C bold and funky wine that I found to be=
+ fascinating but won=E2=80=99t be to everyone=E2=80=99s taste.  With his f=
+irst attempt at Orange wine spending just two weeks on the skins=2C the Al=
+pha Omega represents a quantum leap forward in this regard.  Using the bib=
+lical =E2=80=9CHaKol Kol Yaacov VeHaYadayim Yedei Eisav=E2=80=9D (=E2=80=
+=9Cthe voice is the voice of Yaacov=2C yet the hands are the hands of Esau=
+v=E2=80=9D) wouldn=E2=80=99t be inappropriate in this case.  A rich aromat=
+ic nose is redolent with rich orange and lemon=2C honeysuckle=2C candied c=
+itrus peel=2C scented candles=2C a whiff of oily petrol=2C jasmine=2C lave=
+nder and crazily enough =E2=80=93 subtle notes of smoked meat.  The medium=
+ bodied and layered palate has a slightly oily feel to it that is backed u=
+p with plenty of acidity that also keeps the rich fruit in check
+and a completely unnerving tannic structure that can provide whiplash if y=
+ou aren=E2=80=99t expecting it.  Ever more than the 2016=2C the dissonance=
+ between nose and palate can be unnerving.  With gun smoke=2C melon=2C tar=
+t green apple and more juicy citrus alongside oxidized notes=2C the wine t=
+oys with your senses and reveals layers and layers of notes as time passes=
+ by.  A long and lingering slightly tart and savory finish with an overlay=
+ of orange blossom rounds out this incredibly different (and delicious) wi=
+ne.  Made in Yaacov=E2=80=99s house without any formal hashgacha=2C the wi=
+ne doesn=E2=80=99t carry any kosher symbols but like his prior wines=2C he=
+ vouches for it=2C which was enough for me.  13% AbV.  Definitely a must t=
+ry and still needs 1-2 hours in the decanter before it reveals all it has=
+ to offer=2C the wine should continue to evolve through 2021=2C likely lon=
+ger.
+Yaacov Oryah=2C Eye of the Storm=2C 2014:  A blend of Grenache=2C Syrah=2C=
+ Mourvedre=2C petite Sirah=2C Cinsault and Barbera that somehow really wor=
+ks together=2C combining for a delicious (and smoky) experience.  While en=
+joyable as a simple beverage=2C the wine really deserves some quiet contem=
+plation as the layers of complex flavors and nuances are practically outra=
+geous.  Give the wine the time and effort it deserves and you will be rich=
+ly rewarded with loads of rich red forest fruit=2C hints of boysenberries=
+ with loads of floral notes and a backbone of rich saline minerals=2C roas=
+ted meat and grilled bacon.  Warm spices=2C lavender and slightly bitter h=
+erbs add plenty of nuance.  Black pepper=2C graphite and some freshly turn=
+ed earth show up after a while leading into a lingering finish with plenty=
+ of warm spices leaving you wanting more.  Drink now through 2022.
+
+2011
+
+Yaacov Oryah=2C Iberian Dream=2C Reserva=2C 2011:  Named for the Spain=E2=
+=80=99s ancient Aramaic name (Aspania) and using the Talmudic expression f=
+or unrealistic dreams=2C the wine is a blend of Tempranillo=2C Grenache an=
+d Carignan.  The only difference between this wine and the Gran Reserva re=
+viewed below is the oak aging.  This wine spent 12 months in five-year-old=
+ (neutral) oak (while the Gran Reserva spent three years).  Still tight wi=
+th tannins that need some time to integrate=2C the wine was even more enjo=
+yable the next day.  Loaded with rich deep and dark black fruit=2C earthy=
+ minerals=2C dark bakers chocolate and some notes of smoky oak the full-bo=
+died palate is rich=2C velvety and caressing.  Very much an old world wine=
+ made from new world terroir.  Darker and more brooding than the Gran Rese=
+rva=2C the wine is finally coming into its own and only requires 2-3 hours=
+ at this point in order to be rewarded with great balance and structure al=
+ong with a voluptuous wine that pampers.  Drink now through 2022.
+
+Yaacov Oryah=2C Iberian Dream=2C Gran Reserva=2C 2011:  The same wine as t=
+he Reserva above that spent three years in oak as opposed to one.  The ext=
+ra time yielded a wine that is far more approachable and polished while re=
+taining a decent aging ability.  Rich and near sweet=2C mostly black fruit=
+ on both the nose and medium to full-bodied palate.  Nicely integrated yet=
+ very powerful tannins hold the rich fruit together in a harmonious blend=
+ with the tart cranberry=2C deep spices=2C plenty of rich chocolate=2C pun=
+gent forest notes and lovely earthy minerals that are so reminiscent of tr=
+ue Spanish Rioja=2C it is shocking to think that these are Israeli grapes.=
+  Beg Yaacov to sell you a few bottles of this treat but be prepared for r=
+ejection=2C as the quantities are so minuscule as to be non-existent.  Dri=
+nk now through 2021.
+
+2009
+
+Yaacov Oryah=2C Valley of the Hunters=2C Semillon=2C 2009:  Intended from=
+ the get-go to be released only after a few years=2C Yaacov harvested thes=
+e S=C3=A9millon grapes extra early.  Ultimately the wine was released earl=
+ier than intended in minute quantities with Yaacov then [re]acquiring the=
+ remaining stock and cellaring it privately until he felt it was ready =E2=
+=80=93 a time that has finally arrived.  Despite being completely unoaked=
+=2C the 100% S=C3=A9millon wine has some oaky notes.  Named after Australi=
+a=E2=80=99s Hunter Valley dubbed by Jancis Robinson to be Australia=E2=80=
+=99s greatest gift to the wine world based on the outrageous S=C3=A9millon=
+ it produces=2C the wine certainly serves its namesake proud.  The wine ha=
+s a rich and layered nose of tart green apple=2C white summer fruits=2C re=
+d grapefruit=2C sweet nectarines=2C rich Mayer lemons=2C warm spices and l=
+imestone minerals.  The medium bodied palate has 11% AbV and plenty more r=
+ich fruit=2C sweet honey=2C warm spices=2C saline and more minerals backed=
+ up by decent acidity that has lost some
+of its bite over the last few years.  I loved the wine and was happy to ha=
+ve the entire bottle to myself=2C which allowed me to enjoy its evolution=
+ over the many hours it keep=2C me company.  Still vibrant with great acid=
+ity=2C the wine is going strong but is unlikely to evolve further=2C so I=
+=E2=80=99d drink now (unless you have a lot of bottles=2C in which case I=
+=E2=80=99d drink one a year until they are gone or start to notably declin=
+e).
+
+2008
+
+Yaacov Oryah=2C Old Musketeer=2C 2008 (8 Year): With a day job making clea=
+n and well-crafted wines for Psagot=2C Yaacov Oryah expresses his well-des=
+erved reputation of unconventionality in the growing portfolio of wines bo=
+ttled under his eponymous label (http://www.yossiescorkboard.com/the-many-=
+wines-of-yaacov-oryah/?utm_source=3DYossie%27s+Wine+Recommendations&utm_ca=
+mpaign=3D27e2c21987-EMAIL_CAMPAIGN_2019_05_03_08_25&utm_medium=3Demail&utm=
+_term=3D0_48e1b2a353-27e2c21987-11894221) .  While I am not yet con=
+vinced of the merit behind his planned focus on orange wines=2C I certainl=
+y appreciate the non-conventional winemaking method and m=C3=A9lange of wi=
+nes produced.  Currently only available in Israel directly from Yaacov=2C=
+ these are certainly wines well-worth seeking out and bringing back to enj=
+oy.  After revamping the port-style offering from Psagot (now marketed as=
+ =E2=80=9CDevine=E2=80=9D and after a serious qualitative upgrade=2C is we=
+ll worth seeking out as well)=2C Yaacov serves up one of the most intrigui=
+ng dessert wines I have enjoyed to date.  A limited edition of 1=2C000 bot=
+tles=2C the wine is late harvested Muscat of Alexandria spent seven years=
+ aging in used oak barrels before
+being blended with 6% 2015 Chardonnay which provided acidity to back up th=
+e rich sweetness and balanced out the oxidized notes that give the wine it=
+s complexity and testify to its potential longevity.  The long-term aging=
+ is intended to allow the wine to slowly mature and oxidize providing it w=
+ith complex flavors while also protecting it from future deterioration due=
+ to oxidization=2C thus prolonging its ageability.  Additional wines remai=
+ns in barrels and Yaacov will likely bottle it in a few years as the wine=
+ continues to develop in the barrels.  A lively and aromatic nose and a fu=
+ll bodied and rich palate back by good acidity are both redolent of honeys=
+uckle=2C blooming white flowers=2C cr=C3=A8me br=C3=BBl=C3=A9e=2C toasted=
+ hazelnuts=2C white chocolate=2C candied lemons=2C a hint of white pepper=
+ and expressive notes of tropical fruit all balanced by warm spices and sp=
+icy oak and a long lingering sweet finish that is enhanced by great spices=
+ and more developing complexity. 15.9% AbV.  Drink now through 2035=2C lik=
+ely
+longer
+
+Yaacov Oryah=2C Old[er] Musketeer=2C 2008 (10 Year):  As mentioned above=
+=2C Yaacov initially bottled two of the ten barrels he made of this incred=
+ible wine.  In honor of the very special dinner we both attended prior to=
+ KFWE London=2C Yaacov acquiesced to my request and brought with him a bar=
+rel sample of the wine having aged for two additional years in the barrel.=
+  Following the incredible showing of the wine=2C Yaacov has decided to do=
+ a commercial barreling of the wine representing the ten-year=2C with subs=
+equent bottling following once a year or every two years.  As incredible a=
+s the 8-Year is=2C the 10-Year was so much better it was unbelievable=2C s=
+howcasing the incredible impact oxidization can have on a wine when used p=
+roperly.  There was less maple sugar and caramel on the nose while showing=
+ more pronounced notes of toasted nuts=2C intense heathered flowers and wh=
+ite chocolate alongside the delectable rich tropical fruits and citrus on=
+ the viscous palate.  I use the words impeccable balance to
+describe many of Yaacov=E2=80=99s wines but here it was simply perfect har=
+mony between the rich fruit=2C musky sugar=2C savory nuts and great acidit=
+y backing it all up.  Easily one of the best dessert wines of my life.  Po=
+unce on this as soon as it becomes available =E2=80=93 I promise you won=
+=E2=80=99t regret it.
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+**   (Twitter Account not yet Authorized)
+** Follow @yossieuncorked on Twitter (https://twitter.com/yossieuncorked?u=
+tm_source=3DYossie%27s+Wine+Recommendations&utm_campaign=3D27e2c21987-EMAI=
+L_CAMPAIGN_2019_05_03_08_25&utm_medium=3Demail&utm_term=3D0_48e1b2a353-27e=
+2c21987-11894221)
+| ** Share on Facebook (http://www.facebook.com/share.php?u=3Dhttps%3A%2F%=
+2Fmailchi.mp%2Fyossiescorkboard%2Fyossies-wine-recommendations-375-orange-=
+is-the-new-black&t=3DYossie%27s%20Wine%20Recommendations%20%23375%20-%20Or=
+ange%20is%20the%20new%20Black)
+| ** Share on Twitter (http://twitter.com/intent/tweet?text=3DYossie%27s%2=
+0Wine%20Recommen...%20-%20https%3A%2F%2Fmailchi.mp%2Fyossiescorkboard%2Fyo=
+ssies-wine-recommendations-375-orange-is-the-new-black)
+|  ** Forward to a friend (http://us10.forward-to-friend.com/forward?u=3D4=
+a8a53ce144d5f045511bf809&id=3D27e2c21987&e=3D560aece2e5)
+ Copyright =C2=A9 2019 Yossie's Corkboard=2C All rights reserved.
+You are receiving this email as a former subscriber to Yossie's Corkboard=
+ from Google Groups or because you subscribed from my website (<a href=3D"=
+http://www.yossiescorkboard.com/">www.yossiescorkboard.com</a>).
+
+** unsubscribe from this list (https://yossiescorkboard.us10.list-manage.c=
+om/unsubscribe?u=3D4a8a53ce144d5f045511bf809&id=3D48e1b2a353&e=3D560aece2e5&=
+c=3D27e2c21987)
+| ** update subscription preferences (https://yossiescorkboard.us10.list-m=
+anage.com/profile?u=3D4a8a53ce144d5f045511bf809&id=3D48e1b2a353&e=3D560aece2e5)
+| ** view email in browser (https://mailchi.mp/yossiescorkboard/yossies-wi=
+ne-recommendations-375-orange-is-the-new-black?e=3D560aece2e5)
+--_----------=_MCPart_1859836514
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www=
+=2Ew3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+
+        <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3D=
+UTF-8">
+        <!-- Facebook sharing information tags -->
+        <meta property=3D"og:title" content=3D"Yossie's Wine Recommendatio=
+ns #375 - Orange is the new Black">
+
+        <title>Yossie's Wine Recommendations #375 - Orange is the new Blac=
+k</title>
+<link href=3D"http://fonts.googleapis.com/css?family=3DRadley" rel=3D"styl=
+esheet" type=3D"text/css">
+<link href=3D"http://fonts.googleapis.com/css?family=3DLato:300=2C400=2C70=
+0=2C300italic=2C400italic=2C700italic" rel=3D"stylesheet" type=3D"text/css=
+">
+
+
+=09<style type=3D"text/css">
+=09=09#outlook a{
+=09=09=09padding:0;
+=09=09}
+=09=09body{
+=09=09=09width:100% !important;
+=09=09}
+=09=09body{
+=09=09=09-webkit-text-size-adjust:none;
+=09=09}
+=09=09body{
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09}
+=09=09img{
+=09=09=09border:none;
+=09=09=09font-size:14px;
+=09=09=09font-weight:bold;
+=09=09=09height:auto;
+=09=09=09line-height:100%;
+=09=09=09outline:none;
+=09=09=09text-decoration:none;
+=09=09=09text-transform:capitalize;
+=09=09}
+=09=09#backgroundTable{
+=09=09=09height:100% !important;
+=09=09=09margin:0;
+=09=09=09padding:0;
+=09=09=09width:100% !important;
+=09=09}
+=09=09body=2C.backgroundTable{
+=09=09=09background-color:#efefef;
+=09=09}
+=09=09#templateContainer{
+=09=09=09border:0;
+=09=09}
+=09=09h1=2C.h1{
+=09=09=09color:#5e2018;
+=09=09=09display:block;
+=09=09=09font-family:"Radley"=2Cserif;
+=09=09=09font-size:34px;
+=09=09=09font-weight:normal;
+=09=09=09line-height:100%;
+=09=09=09margin-bottom:10px;
+=09=09=09text-align:left;
+=09=09}
+=09=09h2=2C.h2{
+=09=09=09color:#990000;
+=09=09=09display:block;
+=09=09=09font-family:"Lato"=2Csans-serif;
+=09=09=09font-size:30px;
+=09=09=09font-weight:700;
+=09=09=09line-height:100%;
+=09=09=09margin-bottom:10px;
+=09=09=09text-align:left;
+=09=09}
+=09=09h3=2C.h3{
+=09=09=09color:#000;
+=09=09=09display:block;
+=09=09=09font-family:"Lato"=2Csans-serif;
+=09=09=09font-size:26px;
+=09=09=09font-weight:44;
+=09=09=09line-height:100%;
+=09=09=09margin-bottom:10px;
+=09=09=09text-align:left;
+=09=09}
+=09=09h4=2C.h4{
+=09=09=09color:#000;
+=09=09=09display:block;
+=09=09=09font-family:"Radley"=2Cserif;
+=09=09=09font-size:22px;
+=09=09=09line-height:100%;
+=09=09=09margin-bottom:10px;
+=09=09=09text-align:left;
+=09=09}
+=09=09#templatePreheader{
+=09=09=09background-color:#5e2018;
+=09=09=09width:95%;
+=09=09=09margin-top:10px;
+=09=09}
+=09@media only screen and (max-width:480px){
+=09=09#templatePreheader{
+=09=09=09width:95% !important;
+=09=09}
+
+}=09=09.preheaderContent div{
+=09=09=09color:#eedabc;
+=09=09=09font-family:"Lato"=2Csans-serif;
+=09=09=09font-weight:300;
+=09=09=09font-size:10px;
+=09=09=09line-height:100%;
+=09=09=09text-align:center;
+=09=09}
+=09=09.preheaderContent div a:link=2C.preheaderContent div a:visited{
+=09=09=09color:#cc3333;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09.preheaderContent div img{
+=09=09=09height:auto;
+=09=09=09max-width:600px;
+=09=09}
+=09=09#templateHeader{
+=09=09=09background-color:#eedabc;
+=09=09=09border-bottom:0;
+=09=09=09padding:20px;
+=09=09}
+=09=09.headerContent h1{
+=09=09=09color:#5e2018;
+=09=09=09font-family:"Radley"=2Cserif;
+=09=09=09font-size:36px;
+=09=09=09line-height:0.9em;
+=09=09=09padding:0;
+=09=09=09text-align:center;
+=09=09=09vertical-align:middle;
+=09=09=09letter-spacing:-0.5px;
+=09=09=09margin-bottom:0;
+=09=09=09white-space:normal;
+=09=09=09word-wrap:normal;
+=09=09=09word-break:keep-all;
+=09=09}
+=09@media only screen and (max-width:480px){
+=09=09.headerContent h1{
+=09=09=09font-size:28px !important;
+=09=09=09word-wrap:normal !important;
+=09=09=09word-break:keep-all;
+=09=09}
+
+}=09=09.headerContent h2{
+=09=09=09color:#000;
+=09=09=09font-family:"Lato"=2Csans-serif;
+=09=09=09font-size:16px;
+=09=09=09line-height:1.2em;
+=09=09=09font-weight:300;
+=09=09=09padding:0;
+=09=09=09text-align:center;
+=09=09=09vertical-align:middle;
+=09=09=09margin-top:0;
+=09=09}
+=09@media only screen and (max-width:480px){
+=09=09.headerContent h2{
+=09=09=09font-size:16px !important;
+=09=09}
+
+}=09=09.headerContent hr{
+=09=09=09background-color:#5e2018;
+=09=09=09color:#5e2018;
+=09=09=09width:100%;
+=09=09=09height:1px;
+=09=09=09border:0 none;
+=09=09=09margin-top:30px;
+=09=09=09margin-left:auto;
+=09=09=09margin-right:auto;
+=09=09}
+=09=09.headerContent a:link=2C.headerContent a:visited{
+=09=09=09color:#5e2018;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:none;
+=09=09}
+=09=09#headerImage{
+=09=09=09height:auto;
+=09=09=09max-width:600px !important;
+=09=09}
+=09=09#templateContainer=2C.bodyContent{
+=09=09=09background-color:#eedabc;
+=09=09}
+=09=09.bodyContent div{
+=09=09=09color:#000000;
+=09=09=09font-family:"Lato"=2Csans-serif;
+=09=09=09font-size:14px;
+=09=09=09font-weight:400;
+=09=09=09line-height:150%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.bodyContent div a:link=2C.bodyContent div a:visited{
+=09=09=09color:#990000;
+=09=09=09font-weight:normal;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09.bodyContent img{
+=09=09=09display:inline;
+=09=09=09margin-bottom:10px;
+=09=09}
+=09=09#templateFooter{
+=09=09=09background-color:#5e2018;
+=09=09=09border-top:0;
+=09=09}
+=09=09.footerContent div{
+=09=09=09color:#eedabc;
+=09=09=09font-family:"Lato"=2Csans-serif;
+=09=09=09font-weight:300;
+=09=09=09font-size:12px;
+=09=09=09line-height:125%;
+=09=09=09text-align:left;
+=09=09}
+=09=09.footerContent div a:link=2C.footerContent div a:visited{
+=09=09=09color:#cc3333;
+=09=09=09font-weight:400;
+=09=09=09text-decoration:none;
+=09=09=09word-wrap:normal;
+=09=09}
+=09=09.footerContent div a:hover=2C.footerContent div a:active{
+=09=09=09color:#fff;
+=09=09=09font-weight:400;
+=09=09=09text-decoration:underline;
+=09=09}
+=09=09.footerContent img{
+=09=09=09display:inline;
+=09=09}
+=09=09#social{
+=09=09=09background-color:#5e2018;
+=09=09=09border-bottom:1px solid #eedabc;
+=09=09}
+=09=09#social div{
+=09=09=09text-align:center;
+=09=09}
+=09=09#utility{
+=09=09=09background-color:#5e2018;
+=09=09=09border-top:1px solid #eedabc;
+=09=09}
+=09=09#utility div{
+=09=09=09text-align:center;
+=09=09}
+=09=09#monkeyRewards img{
+=09=09=09max-width:160px;
+=09=09}
+</style><!--[if !mso]><!--><link href=3D"https://fonts.googleapis.com/css=
+?family=3DLato:400=2C400i=2C700=2C700i" rel=3D"stylesheet"><!--<![endif]-=
+-></head>
+    <body leftmargin=3D"0" marginwidth=3D"0" topmargin=3D"0" marginheight=
+=3D"0" offset=3D"0" style=3D"-webkit-text-size-adjust: none;margin: 0;padd=
+ing: 0;background-color: #efefef;width: 100% !important;">
+    =09<center>
+        =09<table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=
+=3D"100%" width=3D"100%" id=3D"backgroundTable" style=3D"margin: 0;padding=
+: 0;height: 100% !important;width: 100% !important;">
+            =09<tr>
+                =09<td align=3D"center" valign=3D"top">
+                        <!-- // Begin Template Preheader \\ -->
+                        <table border=3D"0" cellpadding=3D"10" cellspacing=
+=3D"0" width=3D"100%" id=3D"templatePreheader" style=3D"background-color:=
+ #5e2018;width: 95%;margin-top: 10px;">
+                            <tr>
+                                <td valign=3D"top" class=3D"preheaderConte=
+nt">
+
+                                =09<!-- // Begin Module: Standard Preheade=
+r \\ -->
+                                    <table border=3D"0" cellpadding=3D"10"=
+ cellspacing=3D"0" width=3D"100%">
+                                    =09<tr>
+                                        =09<td valign=3D"top">
+                                            =09
+                                            </td><td valign=3D"top" width=
+=3D"100%">
+                                            =09<div style=3D"color: #eedab=
+c;font-family: &quot;Lato&quot;=2Csans-serif;font-weight: 300;font-size: 1=
+0px;line-height: 100%;text-align: center;">
+                                                =09<!--
+ -->Is this email not displaying correctly?<br><a href=3D"https://mailchi.=
+mp/yossiescorkboard/yossies-wine-recommendations-375-orange-is-the-new-bla=
+ck?e=3D560aece2e5" target=3D"_blank" style=3D"color: #cc3333;font-weight: no=
+rmal;text-decoration: none;">View it in your browser</a>.<!--
+ -->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                =09<!-- // End Module: Standard Preheader=
+ \\ -->
+
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- // End Template Preheader \\ -->
+                    =09<table border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"95%" id=3D"templateContainer" style=3D"border: 0;backgroun=
+d-color: #eedabc;">
+                        =09<tr>
+                            =09<td align=3D"center" valign=3D"top">
+                                    <!-- // Begin Template Header \\ -->
+                                =09<table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"95%" id=3D"templateHeader" style=3D"background-c=
+olor: #eedabc;border-bottom: 0;padding: 20px;">
+                                        <tr>
+                                            <td class=3D"headerContent">
+
+
+                                            =09<div class=3D"headerContent=
+"><h1 style=3D"color: #5e2018;display: block;font-family: &quot;Radley&quo=
+t;=2Cserif;font-size: 36px;font-weight: normal;line-height: 0.9em;margin-b=
+ottom: 0;text-align: center;padding: 0;vertical-align: middle;letter-spaci=
+ng: -0.5px;white-space: normal;word-wrap: normal;word-break: keep-all;"><a=
+ href=3D"https://yossiescorkboard.us10.list-manage.com/track/click?u=3D4a8=
+a53ce144d5f045511bf809&id=3D0b3fa1205b&e=3D560aece2e5" target=3D"_blank"=
+ style=3D"color: #5e2018;font-weight: normal;text-decoration: none;">Yossi=
+e&rsquo;s Wine Recommendations</a></h1>
+
+<h2 class=3D"headerContent" style=3D"color: #000;display: block;font-famil=
+y: &quot;Lato&quot;=2Csans-serif;font-size: 16px;font-weight: 300;line-hei=
+ght: 1.2em;margin-bottom: 10px;text-align: center;padding: 0;vertical-alig=
+n: middle;margin-top: 0;">a weekly newsletter on Israeli and kosher wine=
+=2C &nbsp;wineries and other oenophilic goodies</h2>
+<hr style=3D"background-color: #5e2018;color: #5e2018;width: 100%;height:=
+ 1px;border: 0 none;margin-top: 30px;margin-left: auto;margin-right: auto;=
+"></div>
+
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Header \\ -->
+                                </td>
+                            </tr>
+                        =09<tr>
+                            =09<td align=3D"center" valign=3D"top">
+                                    <!-- // Begin Template Body \\ -->
+                                =09<table border=3D"0" cellpadding=3D"10"=
+ cellspacing=3D"0" width=3D"100%" id=3D"templateBody">
+                                    =09<tr>
+                                            <td valign=3D"top" class=3D"bo=
+dyContent" style=3D"background-color: #eedabc;">
+
+                                                <!-- // Begin Module: Stan=
+dard Content \\ -->
+                                                <table border=3D"0" cellpa=
+dding=3D"10" cellspacing=3D"0" width=3D"100%">
+                                                    <tr>
+                                                        <td valign=3D"top"=
+>
+                                                            <div style=3D"=
+color: #000000;font-family: &quot;Lato&quot;=2Csans-serif;font-size: 14px;=
+font-weight: 400;line-height: 150%;text-align: left;"><div style=3D"text-a=
+lign: center;color: #000000;font-family: &quot;Lato&quot;=2Csans-serif;fon=
+t-size: 14px;font-weight: 400;line-height: 150%;"><img align=3D"middle" da=
+ta-file-id=3D"3447453" height=3D"299" src=3D"https://gallery.mailchimp.com=
+/4a8a53ce144d5f045511bf809/images/ac80333e-2eb7-44ef-8b47-abd0dd65b176.jpg=
+" style=3D"border: 0px;width: 650px;height: 299px;margin: 1px 0px 5px;font=
+-size: 14px;font-weight: bold;line-height: 100%;outline: none;text-decorat=
+ion: none;text-transform: capitalize;display: inline;margin-bottom: 10px;"=
+ width=3D"650"></div>
+<br>
+I hope everyone had a great Pesach with plenty of great wines from the <a=
+ href=3D"https://yossiescorkboard.us10.list-manage.com/track/click?u=3D4a8=
+a53ce144d5f045511bf809&id=3D70a0a1e39d&e=3D560aece2e5" style=3D"color: #9=
+90000;font-weight: normal;text-decoration: underline;">Pesach Guide</a> an=
+d at least a few <a href=3D"https://yossiescorkboard.us10.list-manage.com/=
+track/click?u=3D4a8a53ce144d5f045511bf809&id=3D1383477140&e=3D560aece2e5"=
+ style=3D"color: #990000;font-weight: normal;text-decoration: underline;">=
+<em>Moshiach</em> wines</a> to enhance the incredible Festival of Freedom=
+ we just went through.<br>
+<br>
+With that endeavor behind me=2C we now return to our regular scheduled pro=
+gramming and this week we are discussing a very special winemaker of incre=
+dible depth=2C talent and modesty=2C who I am tremendously happy to see fi=
+nally getting his due.&nbsp; Ever since Yaacov Oryah&rsquo;s story graced=
+ these pages three years ago=2C his popularity has risen so dramatically a=
+s to render the &ldquo;one of Israel&rsquo;s best kept secrets&rdquo; moni=
+ker moot.&nbsp; Given the dramatic increase both in Yaacov&rsquo;s popular=
+ity and the number of new readers since that newsletter was published=2C I=
+ am including an updated version of the man&rsquo;s history before getting=
+ into his current focus=2C wines and plans for the future.&nbsp; For those=
+ familiar with the background=2C feel free to skip the next few paragraphs=
+=2E<br>
+<br>
+<strong><u>Know Thy History</u></strong><br>
+Given how well I know Yaacov and his wines=2C it&rsquo;s crazy to think th=
+at I didn&rsquo;t meet Yaacov in person until January 2014=2C during the S=
+ommelier Expo in Tel Aviv.&nbsp; However=2C I have been tasting (and recom=
+mending) his wines for year&rsquo;s prior=2C ever since 2010 when someone=
+ sent me a bottle of Asif Winery&rsquo;s 2009 <em>Chavlei Aretz</em> Avant=
+ Garde=2C which was the same bottle that led me to delve deeper into the m=
+an behind the delicious wine.&nbsp; The oddly-worded kashrut information o=
+n the bottle&rsquo;s label piqued my curiosity and ultimately led me to an=
+ article from 2006 in the Israeli culinary magazine &ldquo;Wine and Gourme=
+t&rdquo; penned by Asif&rsquo;s Orthodox winemaker (Yaacov)=2C which calle=
+d into question much of the practical <em>halacha relating to the kashrut=
+ of wine</em>.&nbsp; In the same vein as Yaacov&rsquo;s winemaking and ove=
+rall philosophy of life=2C he was ahead of his times with views.&nbsp; Whi=
+le these days his opinions are much more widely disseminated (in part due=
+ to the two in-depth and highly recommended books on the topic by <em>Dr.=
+ Hayim Soloveitchik</em>)=2C they remain outside of mainstream accepted ha=
+lachik practice.<br>
+<br>
+Yaacov was born in New York and made <em>Aliyah </em>with his <em>charedi=
+ </em>parents at the tender age of five where his family settled in <em>Bn=
+ei Brak</em>.&nbsp; From a relatively early age his interests diverged som=
+ewhat from the mainstream <em>charedi </em>community he belonged to=2C joi=
+ning <em>Bnei Akiva </em>as a teen-ager and fully breaking from tradition=
+ by studying in <em>Yeshiva HaKotel </em>under the auspices of the <em>hes=
+der </em>program. &nbsp;Despite being the first member of his extended fam=
+ily to serve in the army=2C following his service Yaacov returned to the f=
+old=2C got married=2C had children and=2C after spending some additional t=
+ime learning in various <em>yeshivot</em>=2C started working in constructi=
+on while studying toward an engineering degree.<br>
+<br>
+<img align=3D"left" data-file-id=3D"3447529" height=3D"262" src=3D"https:/=
+/gallery.mailchimp.com/4a8a53ce144d5f045511bf809/_compresseds/9f930f05-a7b=
+a-4ea4-9155-776e44eed1fc.jpg" style=3D"border: 0px;width: 350px;height: 26=
+2px;margin: 0px 5px 1px 0px;font-size: 14px;font-weight: bold;line-height:=
+ 100%;outline: none;text-decoration: none;text-transform: capitalize;displ=
+ay: inline;margin-bottom: 10px;" width=3D"350">While wine was always of in=
+terest to him=2C his relationship with it was primarily as an enthusiastic=
+ imbiber until 2003 when he discovered that Sorek Winery was offering entr=
+y-level winemaking classes.&nbsp; Taking his first course in 2004 and leas=
+ing his first vineyard the year after=2C Yaacov quickly realized that his=
+ interest was far deeper than he had imagined.&nbsp; In 2006=2C together w=
+ith a partner=2C he founded Asif Winery=2C initially intending it to be a=
+ form of <em>n&eacute;gociant</em><em>=2C</em> only to realize that this t=
+raditional French method of doing business in the wine industry was ill su=
+ited to the Israeli business climate where procuring raw materials of suff=
+icient quality was far more difficult than he had imagined.&nbsp; It was a=
+t this point that Yaacov recognized his inner desire to create wine on his=
+ own and=2C with Itai Lahat at his side as an advisor; Asif released its f=
+irst vintage of approximately 15=2C000 bottles for the 2007 vintage.&nbsp;=
+ Over the years production increased to about 20=2C000 bottles by the 2010=
+ vintage in addition to another 10=2C000 bottles or so made for private cl=
+ients under the auspices of the custom crush facility (which ironically wa=
+s created to provide kosher crush facilities for winemakers that couldn&rs=
+quo;t obtain kosher supervision).<br>
+<br>
+<strong><u>Religious Rumblings</u></strong><br>
+With economic realities dictating the winery&rsquo;s move in 2008 from <em=
+>Moshav Bnei Atarot </em>to the southern city of <em>Arad</em>=2C the wine=
+ry&rsquo;s focus on true local desert terroir wines became another focus p=
+oint for the winery.&nbsp; It was at this time that the winery&rsquo;s eco=
+nomic difficulties started. When located in Atarot=2C the winery&rsquo;s <=
+em>hashgacha </em>was under the local <em>rabbanut=2C </em>which enabled t=
+hem to sell their wines to the kosher-observing public=2C which comprise t=
+he bulk of Israel&rsquo;s wine consumer market.&nbsp; However=2C the <em>r=
+abbanut</em><em>&rsquo;s</em> office located in Arad had a rather negative=
+ view of Yaacov&rsquo;s anti-establishment posture reflected in his aforem=
+entioned article and denied the fledgling winery a formal <em>hashgacha.&n=
+bsp; By doing so=2C the rabbanut imperiled </em>not only the winery&rsquo;=
+s sales but also its potential competitive advantage as a kosher custom cr=
+ush winery=2C combining to eliminate much of its anticipated revenue.&nbsp=
+; All this despite the fact that that many <em>kashrut</em>-keeping Jews w=
+ho knew [and trusted] Yaacov happily drank his wines irrespective of his=
+ lacking a formal <em>hashgacha</em>.&nbsp; This somewhat ludicrous situat=
+ion was the catalyst for the aforementioned language on Asif&rsquo;s bottl=
+es that stated that the wine was prepared in accordance with all applicabl=
+e <em>halachot </em>and only by Jews.<br>
+<br>
+With his life choices already clearly establishing him as a maverick=2C it=
+ shouldn&rsquo;t have surprised anyone that his wines showcased the same i=
+ndependent tendencies=2C with Asif focusing primarily on white wines.&nbsp=
+; With rare clarity of vision=2C right off the bat Yaacov realized how app=
+ropriate white wines were for Israel&rsquo;s Mediterranean terroir long be=
+fore it became our current mainstream thinking.&nbsp; From his first days=
+ as a winemaker Yaacov has always focused his efforts on creating wines th=
+at he was intrigued by (and wanted to drink)=2C viewing them as objects of=
+ intellectual curiosity in addition to a pleasure-inducing beverage regard=
+less of their perceived marketability.&nbsp;<br>
+<br>
+<strong><u>Waste Not=2C Want Not</u></strong><br>
+Ever since his early days learning about the winemaking process=2C Yaacov=
+ struggled with the standard practice of discarding the skins from grapes=
+ intended to make white wines immediately following press.&nbsp; Given the=
+ high value placed on the tannin=2C flavor compounds and phenolic attribut=
+es contributed by the skins during the red winemaking process=2C it seemed=
+ illogical to discard so much of the grape&rsquo;s makeup when utilizing i=
+t to make white wine.&nbsp; Starting with Asif&rsquo;s first vintage in 20=
+07=2C Yaacov was already experimenting with the fermentation of white grap=
+e varietals on their skins for periods far longer than the accepted few ho=
+urs.&nbsp; It wasn&rsquo;t until he turned out a commercial version of suc=
+h a wine for the 2010 vintage that he discovered there were others making=
+ these types of wines and <a href=3D"https://yossiescorkboard.us10.list-ma=
+nage.com/track/click?u=3D4a8a53ce144d5f045511bf809&id=3D0a2ddf791c&e=3D560aece2e5" style=3D"color: #990000;font-weight: normal;text-decoration: und=
+erline;">Orange Wines</a> were an actual wine genre with an illustrious an=
+d ancient past (it was <a href=3D"https://yossiescorkboard.us10.list-manag=
+e.com/track/click?u=3D4a8a53ce144d5f045511bf809&id=3Daff5e99eb4&e=3D560aece2e5" style=3D"color: #990000;font-weight: normal;text-decoration: underl=
+ine;">Daniel Rogov</a> who informed him of this while tasting the aforemen=
+tioned wine). &nbsp;In those days Yaacov preferred to describe his wines a=
+s &ldquo;white wines with extended skin maceration&rdquo; instead of Orang=
+e Wines (partially due to their lack of oxidation and the addition of sulf=
+ites)=2C he has come around and refers to his current crop of ten(!) 2018=
+ Orange Wines as such (more on that later).<br>
+<br>
+<strong><u>A Maverick in the Making</u></strong><br>
+While much easier to comprehend=2C another area in which Yaacov was a pion=
+eer early on is the focus on harvesting a percentage of his grapes early o=
+n and subsequently blending the juice with later harvested and fully ripen=
+ed grapes.&nbsp; This is done to combat Israel&rsquo;s hot weather while p=
+roviding his wines with the proper balance between phenolic ripeness=2C fl=
+avor compounds and sufficient acidity (I am continuously surprised at wine=
+makers who don&rsquo;t adapt this practice in some form).<br>
+<br>
+Intellectual and honest wines are always sought after and appreciated by w=
+ine geeks and Yaacov rapidly found favor and acceptance among Israel&rsquo=
+;s wine cognoscenti.&nbsp; His wines rapidly infiltrated the wine list of=
+ Israel&rsquo;s top [non-kosher] restaurants=2C while his white wines ach=
+ieved near-cult status (and represented nearly 100% of Asif&rsquo;s produc=
+tion from the 2009 vintage).&nbsp; However=2C the lack of mainstream appea=
+l (and extensive oak aging) that us wine geeks find so attractive in our w=
+ines is exactly the opposite of what any winery needs in order to be comme=
+rcially successful and intellectual curiosity and philosophical winemaking=
+ rarely translates into financial success.&nbsp; The young winery rapidly=
+ found itself on unstable economic terms=2C leading it to search for a whi=
+te knight financial backer who re-branded as Midbar after the desert terro=
+ir so crucial to the identity of its wines.&nbsp; Unfortunately the new ow=
+ners and Yaacov didn&rsquo;t exactly see eye-to-eye on a number of fronts=
+ and Yaacov found himself looking for a new gig that would hopefully allow=
+ him at least a certain level of creative freedom.<br>
+<br>
+<strong><u>A Harmonious Marriage</u></strong><br>
+<img data-file-id=3D"3447461" height=3D"300" src=3D"https://gallery.mailch=
+imp.com/4a8a53ce144d5f045511bf809/images/15a5423f-cc13-40b0-8444-98a1ab9ab=
+208.jpg" style=3D"border: 0px none;width: 400px;height: 300px;margin: 0px=
+ 0px 1px 5px;float: right;font-size: 14px;font-weight: bold;line-height: 1=
+00%;outline: none;text-decoration: none;text-transform: capitalize;display=
+: inline;margin-bottom: 10px;" width=3D"400">As he searched for a replacem=
+ent mainstream gig=2C Yaacov&rsquo;s personal winemaking continued unabate=
+d=2C with some of those creations reviewed below.&nbsp; Starting in 2014 Y=
+aacov assumed the position of Psagot&rsquo;s chief winemaker and immediate=
+ly started to make an impression=2C especially (and unsurprisingly) with r=
+espect to Psagot&rsquo;s white wines.&nbsp; Despite Psagot being a large c=
+ommercial winery=2C Yaacov has achieved a great middle ground between the=
+ requirement to produce commercially viable wines while imprinting his win=
+emaking style and helping to further elevate Psagot&rsquo;s overall qualit=
+y winemaking.&nbsp; Additionally=2C with an arrangement similar to other w=
+inemakers at large commercial wineries=2C Yaacov is able to continue his i=
+ntellectual winemaking under his own label and for others.&nbsp; Examples=
+ of the numerous other winemakers with similar arrangements include Ido Le=
+winsohn (Barkan/Lewinsohn)=2C Kobi Arbiv (Recanati/Mia Luce)=2C Jonathan H=
+ajdu (Covenant/Hajdu) and Pierre Miodownick (Netofa/Nadiv/Bordeaux).<br>
+<br>
+In addition to Psagot and his own wines discussed below=2C Yaacov spent a=
+ brief stint at Ella Valley Vineyards following the departure of Lin Gold=
+ (after filling in for her during her maternity leave)=2C but that stint w=
+as extremely short-lived with a negligible long-term impact on that strugg=
+ling winery and acts a consultant to a number of winemakers in a variety o=
+f ways (including Amos and Zwebner).&nbsp; However=2C as Yaacov grows prod=
+uction to meet his rising popularity he is cutting down on many of these c=
+onsulting gigs in order to focus on a cohesive strategy for his brand.<br>
+<br>
+<strong><u>What&rsquo;s in a Name</u></strong><br>
+Over the years Yaacov has produced a potpourri of wines including an annua=
+l red wine blend for the Claro (and now Brut) restaurants=2C a highly uniq=
+ue varietal S&eacute;millon from 2009 (Valley of the Hunters after the Aus=
+tralian Hunter Valley style Yaacov utilized)=2C two &ldquo;Rioja-styled&rd=
+quo; wines (Iberian Dream)=2C a delightful GSM (Grenache=2C Syrah and Mour=
+v&egrave;dre) and one of most interesting (and delicious) kosher dessert w=
+ines I have ever tasted &ndash; the Old Musketeer.&nbsp; His playful=2C cr=
+eative and intellectual curiosity isn&rsquo;t limited to Yaacov&rsquo;s wi=
+nemaking philosophy but carry over to the name of each wine he turns out.&=
+nbsp; As you will see from the list below (and the explanations in the TNs=
+)=2C each wine had a hidden meaning or play on words reflecting something=
+ about the wine or its production.<br>
+<br>
+Starting with the 2014 vintage=2C Yaacov started a rebranding effort=2C co=
+nsolidating his wines under the current eponymous label=2C housing his ent=
+ire (growing) portfolio of wines and creating the Alpha Omega label=2C whi=
+ch now represents his entire line of Orange-styled wines.&nbsp; The Greek=
+ equivalent of &ldquo;from A to Z=2C&rdquo; the name refers to Yaacov&rsqu=
+o;s view that this style of winemaking yields the purest and most complete=
+ expression of the grape variety while also reflecting the utilization of=
+ the entire piece of fruit.&nbsp; Over the years Yaacov has produced a lar=
+ge number of wines=2C with the ones produced under his own name / label li=
+sted in their entirety below.&nbsp; As you can see=2C he has significantly=
+ ramped up production starting with the 2017 vintage=2C partially to meet=
+ increasing demand for his precise=2C elegant and intellectually stimulati=
+ng wines.&nbsp; Don&rsquo;t worry &ndash; they are deliciously enjoyable a=
+s well!
+<div style=3D"text-align: center;color: #000000;font-family: &quot;Lato&qu=
+ot;=2Csans-serif;font-size: 14px;font-weight: 400;line-height: 150%;"><br>
+<img data-file-id=3D"3447449" height=3D"272" src=3D"https://gallery.mailch=
+imp.com/4a8a53ce144d5f045511bf809/images/3993162d-386f-4fd8-9147-c81d9e13e=
+10b.jpg" style=3D"border: 0px;width: 500px;height: 272px;margin: 0px 0px 3=
+px;font-size: 14px;font-weight: bold;line-height: 100%;outline: none;text-=
+decoration: none;text-transform: capitalize;display: inline;margin-bottom:=
+ 10px;" width=3D"500"></div>
+
+<div style=3D"color: #000000;font-family: &quot;Lato&quot;=2Csans-serif;fo=
+nt-size: 14px;font-weight: 400;line-height: 150%;text-align: left;">&nbsp;=
+</div>
+&nbsp;
+
+<table border=3D"1" cellpadding=3D"0" cellspacing=3D"0">
+=09<tbody>
+=09=09<tr>
+=09=09=09<td style=3D"width:313px;"><strong><u>2008</u></strong><br>
+=09=09=09Old Musketeer<br>
+=09=09=09<br>
+=09=09=09<strong><u>2009</u></strong><br>
+=09=09=09Valley of the Hunters<br>
+=09=09=09<br>
+=09=09=09<strong><u>2011</u></strong><br>
+=09=09=09Iberian Dream Reserva (Rioja-styled wine)<br>
+=09=09=09Iberian Dream Gran Reserva&nbsp; (Rioja-styled wine)<br>
+=09=09=09<br>
+=09=09=09<strong><u>2013</u></strong><br>
+=09=09=09Claro (exclusive red blend for Claro)<br>
+=09=09=09<br>
+=09=09=09<strong><u>2014</u></strong><br>
+=09=09=09Alpha Omega (Orange-styled blend)<br>
+=09=09=09Claro<br>
+=09=09=09Eye of the Storm<br>
+=09=09=09Pandora&rsquo;s Riddle (exclusive red blend for Brut)<br>
+=09=09=09<br>
+=09=09=09<strong><u>2015</u></strong><br>
+=09=09=09Alpha Omega<br>
+=09=09=09Claro<br>
+=09=09=09Eye of the Storm<br>
+=09=09=09Jemma (exclusive orange wine for Brut)<br>
+=09=09=09<br>
+=09=09=09<strong><u>2016</u></strong><br>
+=09=09=09Alpha Omega<br>
+=09=09=09Jemma<br>
+=09=09=09Light from Darkness<br>
+=09=09=09Pandora&rsquo;s Riddle<br>
+=09=09=09Timrot Ashan (exclusive red blend for Brut)<br>
+=09=09=09&nbsp;</td>
+=09=09=09<td style=3D"width:373px;"><br>
+=09=09=09<strong><u>2017</u></strong><br>
+=09=09=09Alpha Omega Label: Chenin Blanc and Melchizedek (<strong>NYR</str=
+ong>)<br>
+=09=09=09Alpha Omega Jemma (<strong>NYR</strong>)<br>
+=09=09=09Eye of the Storm (<strong>NYR</strong>)<br>
+=09=09=09Light from Darkness (<a href=3D"https://yossiescorkboard.us10.lis=
+t-manage.com/track/click?u=3D4a8a53ce144d5f045511bf809&id=3D20dcc33714&e=
+=3D560aece2e5" style=3D"color: #990000;font-weight: normal;text-decoratio=
+n: underline;"><em>blanc de noir</em></a>))=2C<br>
+=09=09=09Saign&eacute;e d&rsquo;Orange<br>
+=09=09=09Silent Hunter<br>
+=09=09=09SOB (&ldquo;Special Oryah Blend&rdquo;) (private blend also avail=
+able from Yaacov) (not yet released (&ldquo;<strong>NYR</strong>&rdquo;))<=
+br>
+=09=09=09The Duke Pontiff (previously Pandora&rsquo;s Riddle but now also=
+ available from Yaacov)<br>
+=09=09=09Timrot Ashan (<strong>NYR)</strong><br>
+=09=09=09Valley of the Hunters (<strong>NYR)</strong><br>
+=09=09=09<br>
+=09=09=09<strong><u>2018</u></strong><br>
+=09=09=09Alpha Omega Varietals:&nbsp; Chardonnay=2C Chenin Blanc=2C Gew&uu=
+ml;rztraminer=2C Semillon=2C Roussanne=2C Viognier<br>
+=09=09=09Alpha Omega Blends: Melchizedek (<strong>NYR</strong>)=2C Antholo=
+gy of Spice=2C The First Anthology<br>
+=09=09=09Alpha Omega Jemma (<strong>NYR</strong>)<br>
+=09=09=09Eye of the Storm (<strong>NYR</strong>)<br>
+=09=09=09Iberian Dream Reserva (<strong>NYR</strong>)<br>
+=09=09=09Light from Darkness<br>
+=09=09=09Pretty as the Moon (Ros&eacute;)<br>
+=09=09=09Silent Hunter<br>
+=09=09=09SOB (<strong>NYR</strong>)<br>
+=09=09=09Soul Mate<br>
+=09=09=09The Duke Pontiff (<strong>NYR</strong>)<br>
+=09=09=09Timrot Ashan (<strong>NYR</strong>)<br>
+=09=09=09Valley of the Hunters (<strong>NYR</strong>)<br>
+=09=09=09&nbsp;</td>
+=09=09</tr>
+=09</tbody>
+</table>
+&nbsp;<br>
+<strong><u>Word to the Wise</u></strong><br>
+Wine geeks are always on the lookout for new and interesting things=2C whi=
+ch is one of the many reasons Yaacov&rsquo;s wines rapidly gained favor an=
+d near-cult status among Israel&rsquo;s wine-drinking elite (precise winem=
+aking=2C meticulous care=2C creativity and obvious talent played a big par=
+t here as well).&nbsp; However=2C other than a few wines=2C they aren&rsqu=
+o;t mainstream wines and can be difficult to appreciate=2C especially for=
+ those weaned on fruit-forward=2C big=2C bold and alcoholic wines with ple=
+nty of oak.&nbsp; Given his desire to allow the fruit to lead the way and=
+ a propensity to harvest early=2C maintain acidity and use oak only as and=
+ when required=2C many of the wines can be confusing to comprehend=2C gett=
+ing in the way of a wine&rsquo;s primary purpose &ndash; to provide pleasu=
+re.&nbsp; Even those who have turned the corner and love refreshing and cr=
+isp whites won&rsquo;t find what they are looking for in Orange wines=2C w=
+hose funkiness and subdued flavors provide contra to the acidity and preve=
+nt it from screaming across your palate (it&rsquo;s there in spades and ne=
+cessary to balance the heft).&nbsp; Other than Yaacov&rsquo;s multiple Ora=
+nge-styled creations=2C the kosher wine world still has limited options wi=
+th only a few other options including offerings from Bat Shlomo=2C Hajdu a=
+nd Herzog.<br>
+<br>
+Interestingly=2C those not yet into wines can find orange-styled wines enj=
+oyable as they are neither heavily tannic like many newly-released red win=
+es or overly astringent like so many of today&rsquo;s white wines while pr=
+oviding subdued honeyed fruit notes with sour undertones.&nbsp; From Yaaco=
+v&rsquo;s perspective=2C the wines are there to stimulate thought=2C conve=
+rsation and wonderment while also providing pleasure.&nbsp; For the most p=
+art=2C the wines range between 11% - 13% AbV=2C a rarity for Israeli wines=
+ and nearly all of them benefit from time and quiet contemplation.&nbsp; T=
+his doesn&rsquo;t mean they don&rsquo;t provide immense pleasure as enjoya=
+ble wines=2C but rather they are intellectual wines with a whole additiona=
+l side of contemplation waiting to be discovered.&nbsp; Either way=2C all=
+ the wines are highly recommended and=2C like most other wines=2C will be=
+ much more enjoyable with a few friends while tasting a number of them sid=
+e by side and comparing notes.<br>
+<br>
+Personally=2C tasting through ten Orange wines from one vintage across mul=
+tiple varietals (and even winemaking styles) was fascinating and doing so=
+ together with Yaacov increased my pleasure=2C enjoyment and the education=
+al aspect of the tasting tenfold.&nbsp; Given Yaacov&rsquo;s goal of expre=
+ssing the complete essence of the varietal it would have been really cool=
+ to taste the same varietal wine in both Orange-style and as a straight wi=
+ne=2C but 40 wines would likely have been too much for him=2C especially g=
+iven his duties as Psagot&rsquo;s chief winemaker (food for thought Yaacov=
+).&nbsp;<br>
+<br>
+<strong><u>Fresh off the Boat</u></strong><br>
+After years of reigning supreme on the &ldquo;Israel Only&rdquo; list=2C a=
+ number of Yaacov&rsquo;s wines are being imported into the US by Liquid K=
+osher and should be available soon directly from the importer.&nbsp; Other=
+wise=2C all of the wines are available in Israel directly from Yaacov (<a=
+ href=3D"mailto:Yaacov.oryah@gmail.com" style=3D"color: #990000;font-weigh=
+t: normal;text-decoration: underline;">Yaacov.oryah@gmail.com</a>).&nbsp;=
+ As I hope has been conveyed through this newsletter (and the tasting note=
+s below) &ndash; all are highly recommended (with respect to the Alpha Ome=
+ga wines=2C subject to how your palate feels about the style) and are avai=
+lable in relatively limited quantities.<br>
+<br>
+<strong><u>The Man behind the Mission</u></strong><br>
+Each of his wines speaks for themselves as a stand-alone masterpiece of pr=
+ecision and creative winemaking.&nbsp; However=2C despite all the ink pour=
+ed until now=2C one would walk away missing a significant part of the pict=
+ure if I wasn&rsquo;t to briefly say a few words about the individual behi=
+nd the wines.&nbsp; Easily one of the most understated personalities in th=
+e Israeli wine world=2C Yaacov projects a quiet contemplation that belies=
+ an immense intellectual curiosity that knows no bounds.&nbsp; Powerfully=
+ charismatic=2C Yaacov is a lover of men and strongly believes in engaging=
+ with people from all walks of life=2C while striving to focus on that whi=
+ch unites us instead of what divides us.&nbsp; His intellectual curiosity=
+=2C powerful charisma and tremendous humility make him one of the most enj=
+oyable people with whom to spend time.&nbsp; I always feel that I&rsquo;d=
+ rather be talking about ten different things in addition to the wine-rela=
+ted topics we inevitably gravitate towards.&nbsp; He is a true renaissance=
+ man and despite knowledge across a wide-ranging array of topics=2C he is=
+ always thinking=2C exploring and striving to do more=2C making his a grea=
+t person to hang out with=2C talk to and learn from.<br>
+<br>
+The dualities of making wine for the general public at Psagot while creati=
+ng contemplative and serious wines that demand your attention under his ep=
+onymous label are only reconcilable in an individual as unique as he is.&n=
+bsp; As such=2C this newsletter represents a rare instance where knowing a=
+ bit about the man is a pre-requisite to enjoying and understanding the wi=
+nes.&nbsp; I highly recommend taking the time to seek him out=2C taste his=
+ wines and spend some time with Yaacov Oryah.&nbsp; I have and continue to=
+ learn much from him and hope your encounters with Yaacov and his wines wi=
+ll lead you to appreciate his talents as much as I do!<br>
+<br>
+<em>Shabbat Shalom</em>=2C<br>
+Yossie<br>
+<br>
+<strong><u>2018</u></strong><br>
+<br>
+<u><img align=3D"left" data-file-id=3D"3447493" height=3D"150" src=3D"http=
+s://gallery.mailchimp.com/4a8a53ce144d5f045511bf809/_compresseds/39a49eaa-=
+28c3-4008-b7e8-5bc671dc2b8d.jpg" style=3D"border: 0px;width: 112px;height:=
+ 150px;margin: 1px 5px 1px 0px;font-size: 14px;font-weight: bold;line-heig=
+ht: 100%;outline: none;text-decoration: none;text-transform: capitalize;di=
+splay: inline;margin-bottom: 10px;" width=3D"112">Yaacov Oryah=2C Pretty a=
+s the Moon (<em>Yafa K&rsquo;Levana</em>)=2C Ros&eacute;=2C 2018</u>:&nbsp=
+; Have no fear &ndash; being one of the least likely winemakers to follow=
+ any sort of trend=2C Yaacov hasn&rsquo;t succumbed to the prevailing wind=
+s of rose &ndash; the wine is a mistake of sorts=2C as ever-so-subtlety in=
+dicated by the play on words in the wine&rsquo;s name.&nbsp; A blend of Pe=
+tite Sirah (53%)=2C Mourv&egrave;dre (29%) and Syrah (18%) that was intend=
+ed to be a <em>blanc de n</em>oir but turned out as a <em>rose de noir</em=
+> instead.&nbsp; <em>Levana</em> is Hebrew for the moon and the female for=
+m of the color white=2C reflecting the fact that the wine is a great as th=
+e white wine it was intended to be.&nbsp; The wine has a subtle nose of da=
+rk red fruit including tart raspberries and pomegranate along with some fu=
+nky minerals=2C slate and heather notes.&nbsp; The medium bodied palate is=
+ loaded with bright acidity that is nicely balanced with the slightly heft=
+y fruit=2C more minerals and a streak of slightly bitter salinity that car=
+ries through the lingering finish.&nbsp; A delicious and easy to drink win=
+e with enough complexity to please the more discerning wine lovers as well=
+=2E&nbsp; 13% AbV. Drink now and over the next 9-15 months or so.
+
+<div style=3D"text-align: center;color: #000000;font-family: &quot;Lato&qu=
+ot;=2Csans-serif;font-size: 14px;font-weight: 400;line-height: 150%;"><br>
+<u><img data-file-id=3D"3447497" height=3D"224" src=3D"https://gallery.mai=
+lchimp.com/4a8a53ce144d5f045511bf809/images/a835b554-1df6-4503-917a-d0444b=
+ec0679.jpg" style=3D"border: 0px;width: 300px;height: 224px;margin: 3px 0p=
+x;font-size: 14px;font-weight: bold;line-height: 100%;outline: none;text-d=
+ecoration: none;text-transform: capitalize;display: inline;margin-bottom:=
+ 10px;" width=3D"300"></u><br>
+&nbsp;</div>
+<u>Yaacov Oryah=2C Alpha Omega=2C Chardonnay=2C 2018</u>:&nbsp; 100% unoak=
+ed Chardonnay which spent 2.5 weeks macerating on its skins.&nbsp; Like ma=
+ny orange-styled wines=2C the nose is on the subtle side with lovely green=
+ apples=2C warm spices and herbal notes along with plenty of flinty minera=
+ls=2C much of which is present on the medium bodied palate that needs some=
+ air to open up.&nbsp; Floral notes and jasmine combine with the tart gree=
+n apples=2C quince and more minerals with good balancing acidity keeping t=
+hings honest.&nbsp; Great balance reflects Yaacov&rsquo;s precise winemaki=
+ng skills.&nbsp; 13% AbV.&nbsp; Drink now through 2023.<br>
+<br>
+<u>Yaacov Oryah=2C Alpha Omega=2C Chenin Blanc=2C 2018</u>:&nbsp; Together=
+ with S&eacute;millon=2C Chenin Blanc seems to be the wine with which Yaac=
+ov creates the most powerful magic and is also the best suited for the Ora=
+nge-treatment.&nbsp; A beautiful nose redolent with fresh and vibrant swee=
+t apple=2C pear and some floral notes that overwhelm initially but settle=
+ down nicely with a bit of air (a prerequisite for nearly all the Orange-s=
+tyled wines I have tasted) and play nicely with the fruit which is enhance=
+d by lovely flinty minerals=2C hints of smoke=2C heather and lovely citrus=
+ nose together with the characteristic oxidized funkiness that adds pleasi=
+ng complexity and character.&nbsp; The medium bodied palate has loads more=
+ fruit which is tamed by rich mineral notes=2C more smoke and sweet herbs=
+=2C with floral notes leading the way to the lingering finish.&nbsp; Drink=
+ now (with 30-45 minutes of air) through 2024.<br>
+<br>
+<u>Yaacov Oryah=2C Alpha Omega=2C Gew&uuml;rztraminer=2C 2018</u>:&nbsp; 1=
+00% Gew&uuml;rztraminer sourced from the same vineyard as the Chardonnay a=
+bove=2C the wine spent 2.5 weeks macerating on its skins and presents in a=
+ pale pink salmon color derived from the unique color hue of the grape&rsq=
+uo;s skins.&nbsp; Characteristic of the grape=2C the nose is highly aromat=
+ic with plenty of lavender=2C rose hips=2C floral notes=2C tropical fruit=
+ and orange citrus notes along with the typical lychee notes=2C plenty of=
+ warm spice and a hint of smoke.&nbsp; The medium bodied palate is still t=
+ight but with air reveals loads more spice and tropical fruits including p=
+ineapple=2C more sweet citrus and slate minerals together with a subtle bi=
+tter herbal streak that adds complexity.&nbsp; Supremely well balanced wit=
+h great acid backing it up=2C over time the abundant floral notes fade to=
+ reveal more traditional Gewurz notes.&nbsp; Drink now (with 30 minutes of=
+ air) through 2022=2C maybe longer.<br>
+<br>
+<u>Yaacov Oryah=2C Alpha Omega=2C Roussanne=2C 2018</u>:&nbsp; Like most o=
+f Yaacov&rsquo;s 2018 Orange-styled wines=2C at this stage the wine is clo=
+sed and tight=2C requiring some air time to reveal the secrets beneath.&nb=
+sp; Pears=2C heather=2C honeysuckle=2C warm spices and citrus notes domina=
+te the nose together with flinty minerals.&nbsp; The medium bodied palate=
+ showcases far more tannin and power than the Chardonnay and S&eacute;mill=
+on.&nbsp; The wine is lean=2C subtle=2C and austere with incredible balanc=
+e between the great acidity=2C deep fruit and complexity granted by the mi=
+nerals and smoky overlay.&nbsp; Really a lovely wine whose development I a=
+m excited to follow over the years.&nbsp; If this is the &ldquo;essence&rd=
+quo; of Roussanne=2C sign me up!&nbsp; Drink now through 2023=2C likely lo=
+nger.<br>
+<br>
+<u>Yaacov Oryah=2C Alpha Omega=2C S&eacute;millon=2C 2018</u>:&nbsp; Refle=
+cting the vineyard&rsquo;s quality and Yaacov&rsquo;s expertise with (and=
+ love for) the grape=2C this is one of my favorite Orange wines yet.&nbsp;=
+ An expansive nose is loaded with funky oxidized nose backing up tart gree=
+n apples=2C lemon and orange citrus=2C slate minerals=2C brown spices and=
+ honeyed notes.&nbsp; The medium bodied palate is slightly oily and viscou=
+s and needs plenty of air to open up but once it does you are rewarded wit=
+h honeyed fruit kept in check with good acidity=2C elegant tannins=2C more=
+ citrus and minerals.&nbsp; Delicious now=2C complexity will come with age=
+ so give this one the time is deserves and wait at least 12 months before=
+ opening and then enjoy through 2026=2C likely longer.<br>
+<br>
+<u>Yaacov Oryah=2C Alpha Omega=2C Viognier=2C 2018</u>:&nbsp; Sourced from=
+ a Northern vineyard located near Har Tavor=2C the wine showcases the trad=
+itional Viognier characteristics and presents as a delicious=2C approachab=
+le=2C round and mouth-filling wine with lovely peach=2C apricot and other=
+ tropical fruits joined by floral notes=2C warm spices and backed by great=
+ acidity.&nbsp; The medium bodied palate is still closed but really opened=
+ up as the wine warmed in the glass and after 45 minutes layers of complex=
+ flavors were revealed including roasted hazelnuts=2C smoky oak=2C brown s=
+pices and flinty minerals; while the wine remained a delightful simple ple=
+asure to drink.&nbsp; Drink now through 2021=2C maybe longer.<br>
+<br>
+<u><img align=3D"left" data-file-id=3D"3447501" height=3D"200" src=3D"http=
+s://gallery.mailchimp.com/4a8a53ce144d5f045511bf809/_compresseds/b9c2513b-=
+80fb-4254-b778-5ef128d181e7.jpg" style=3D"border: 0px;width: 150px;height:=
+ 200px;margin: 0px 5px 3px 0px;font-size: 14px;font-weight: bold;line-heig=
+ht: 100%;outline: none;text-decoration: none;text-transform: capitalize;di=
+splay: inline;margin-bottom: 10px;" width=3D"150">Yaacov Oryah=2C Alpha Om=
+ega=2C The First Anthology (<em>HaAsufa HaRishona</em>)=2C 2018</u>:&nbsp;=
+ As alluded to by the name=2C the wine pays homage to Yaacov&rsquo;s first=
+ Orange wine &ndash; the 2007 Asif mentioned above (Asufa and Asif share t=
+he same root in Hebrew).&nbsp; Utilizing the same varietals as that initia=
+l blend &ndash; Chardonnay=2C Viognier and Chenin Blanc (albeit in differe=
+nt percentages &ndash; 40%=2C 40% and 20% respectively)=2C the components=
+ are comprised of the varietal Alpha Omega Orange-styled wines listed abov=
+e.&nbsp; A subdued nose has plenty of yellow sweet apple and pears along w=
+ith warm spice.&nbsp; The medium bodied palate has plenty of sweet fruit=
+=2C baked apple pie=2C flinty minerals on a background of cloves and more=
+ minerals and backed by good acidity=2C elegant subtle tannins and sweet h=
+erbs.&nbsp; powerful and elegant=2C the wine is lithe and precise with cit=
+rus and earthy notes lingering long.&nbsp; Drink now through 2023.<br>
+<br>
+<u>Yaacov Oryah=2C Alpha Omega=2C Anthology of Spice (<em>Asofat HaTavlin<=
+/em>)=2C 2018</u>:&nbsp; A blend of Gewurztraminer (50%)=2C Chardonnay (40=
+%) and Roussanne (10%) but=2C unlike the First Anthology=2C here the Gewur=
+ztraminer is not the same one used in the Alpha Omega above but rather a d=
+ifferent=2C wildly aromatic version (also made Orange-style and then blend=
+ed with the other components.&nbsp; Sweet and extremely well made with Yaa=
+cov&rsquo;s characteristic precise winemaking=2C with the spicy Gew&uuml;r=
+ztraminer notes dominating.&nbsp; The expressive nose needs some air to op=
+en up but then you are rewarded with heady floral notes=2C rose hips and a=
+wesome spice=2C all grounded by the Orange-oxidized funk=2C minerals and a=
+ subtle smoky note that adds complexity.&nbsp; The medium to full-bodied p=
+alate has nicely integrated tannins and a good acidic core providing backb=
+one to the heady spice and floral notes.&nbsp; Gun smoke=2C flint and some=
+ sweet fruit linger long.&nbsp; Give this one the time is needs and deserv=
+es=2C whether opening now or waiting 12 months before enjoying through 202=
+6.<br>
+<br>
+<u><img align=3D"right" data-file-id=3D"3447473" height=3D"150" src=3D"htt=
+ps://gallery.mailchimp.com/4a8a53ce144d5f045511bf809/_compresseds/b77d3cb7=
+-34dc-4256-8727-7365e07281db.jpg" style=3D"border: 0px;width: 112px;height=
+: 150px;margin: 0px 0px 2px 5px;font-size: 14px;font-weight: bold;line-hei=
+ght: 100%;outline: none;text-decoration: none;text-transform: capitalize;d=
+isplay: inline;margin-bottom: 10px;" width=3D"112">Ya&rsquo;acov Oryah=2C=
+ Light from Darkness (<em>Or M&rsquo;Ofel</em>)=2C 2018</u>: &nbsp;A blend=
+ of 33% Grenache=2C 31% Cinsault=2C 24% Syrah=2C and 12% Mourv&egrave;dre=
+=2C the wine&rsquo;s name basically means <em>blanc de noir</em> (Light (w=
+ine) from Darkness (grapes)).&nbsp; The wine was made with no skin contact=
+ or malolactic fermentation=2C which allowed for a fresh and vibrant wine.=
+&nbsp; Harvested early=2C the wine clocks in at 11.5% AbV.&nbsp; Plenty of=
+ red fruit and floral notes on both the nose and palate along with rich mi=
+nerals=2C near-sweet tropical fruit with plenty of lip-smacking acidity.&n=
+bsp; With air=2C the wine opens up to reveal layers of complexity along wi=
+th freshly dried hay and herbal notes.&nbsp; Drink now through 2021.<br>
+<br>
+<u><img align=3D"left" data-file-id=3D"3447465" height=3D"150" src=3D"http=
+s://gallery.mailchimp.com/4a8a53ce144d5f045511bf809/_compresseds/b4ca2c45-=
+cf01-4f76-adc1-2251f176135f.jpg" style=3D"border: 0px;width: 112px;height:=
+ 150px;margin: 0px 5px 3px 0px;font-size: 14px;font-weight: bold;line-heig=
+ht: 100%;outline: none;text-decoration: none;text-transform: capitalize;di=
+splay: inline;margin-bottom: 10px;" width=3D"112">Ya&rsquo;acov Oryah=2C S=
+ilent Hunter (<em>HaTzayad HaShaket</em>)=2C 2018</u>: &nbsp;The wine&rsqu=
+o;s name alludes to Australia&rsquo;s Hunter Valley &ndash; home to some o=
+f the longest-lasting (and most interesting) expressions of Semillon out t=
+here=2C with the silence referring to the Chenin&rsquo;s dominance in the=
+ blend (despite the lower percentage).&nbsp; A blend of Semillon (60%) and=
+ Chenin Blanc (40%)=2C the Chenin adds significant heft (and some floral p=
+erfume) without taking away from the heather and mineral notes the Semillo=
+n brings to the table.&nbsp; The expressive nose is clean=2C precise and e=
+legant with near-sweet fruit balanced with saline minerals=2C gun smoke=2C=
+ flint and creamy citrus notes.&nbsp; The medium bodied palate is loaded w=
+ith acid that provides perfect contra to the rich fruit=2C slate minerals=
+ and lip-smacking citrus that evolves throughout the long mid-palate into=
+ the long lingering finish.&nbsp; I enjoyed this wine&rsquo;s evolution ov=
+er seven hours and it wasn&rsquo;t close to being done.&nbsp; Highly enjoy=
+able now but with so much hidden potential ahead of it=2C it&rsquo;s almos=
+t criminal to open it now=2C but if you must make sure it gets at least tw=
+o hours in the decanter.&nbsp; Better to wait 12-18 months before enjoying=
+ through 2025=2C maybe longer.&nbsp; 11.5% AbV.<br>
+<br>
+<u><img align=3D"right" data-file-id=3D"3447469" height=3D"150" src=3D"htt=
+ps://gallery.mailchimp.com/4a8a53ce144d5f045511bf809/_compresseds/43fe5acb=
+-f12b-4fbd-9871-93d82f5f351e.jpg" style=3D"border: 0px;width: 112px;height=
+: 150px;margin: 0px 0px 1px 5px;font-size: 14px;font-weight: bold;line-hei=
+ght: 100%;outline: none;text-decoration: none;text-transform: capitalize;d=
+isplay: inline;margin-bottom: 10px;" width=3D"112">Ya&rsquo;acov Oryah=2C=
+ Soulmate (<em>Ezer K&rsquo;Negdo</em>)=2C 2018</u>:&nbsp; the wine&rsquo;=
+s name has a dual meaning=2C reflecting how the perfect mate creates a sum=
+ greater than its part but also pays homage to Yaacov&rsquo;s wife Patrici=
+a who convinced him to use the varietal in the blend=2C which resulted in=
+ this delightfully delicious wine.&nbsp; A blend of Chardonnay (55%) and C=
+henin Blanc (45%)=2C the Chardonnay is sourced from a plot shared with Dom=
+aine du Castel and Vitkin.&nbsp; Great viscosity=2C medium bodied with hin=
+ts of tropical fruit with plenty of clean minerals and warm spices galore.=
+ Fresh and vibrant with clean lines and hefty fruit from the Chardonnay.&n=
+bsp; Red grapefruit=2C Mayer lemon and plenty of floral notes provide the=
+ over-arching notes with the minerals and acid providing the underlying ba=
+ckground that carries the wine through.&nbsp; Lithe and delicious=2C the w=
+ine is highly enjoyable.&nbsp; 12.5% AbV.&nbsp; Drink now through 2021.<br=
+>
+<br>
+<strong><u>2017</u></strong><br>
+<br>
+<u><img align=3D"left" data-file-id=3D"3447509" height=3D"150" src=3D"http=
+s://gallery.mailchimp.com/4a8a53ce144d5f045511bf809/_compresseds/61145b13-=
+60df-4954-ac8b-b077d5bd6c73.jpg" style=3D"border: 0px;width: 112px;height:=
+ 150px;margin: 0px 5px 1px 0px;font-size: 14px;font-weight: bold;line-heig=
+ht: 100%;outline: none;text-decoration: none;text-transform: capitalize;di=
+splay: inline;margin-bottom: 10px;" width=3D"112">Yaacov Oryah=2C Alpha Om=
+ega=2C Chenin Blanc=2C 2017</u>:&nbsp; The wine opens with a near-sweet an=
+d expressive nose of heather honeysuckle dominating but also sweet orange=
+ citrus notes=2C pineapple and some yellow pears.&nbsp; The rich nose lead=
+s your expectations toward a full and juicy near-sweet wine before the med=
+ium bodied and slightly viscous wine hits your palate.&nbsp; There is a co=
+mplete dissonance between what the nose led you to expect and the lean=2C=
+ subtle and complex palate your mouth experiences &ndash; crazy experience=
+=2E&nbsp; That said=2C ignoring the false expectations from the nose=2C the=
+ wine is round and mouth-filling with great balancing acidity and subtle f=
+ruit augmented by rich flint minerals=2C saline tannin=2C roasted nuts=2C=
+ black tea and bitter orange pith.&nbsp; Medium to full bodied with a nice=
+ heft and nuanced complexity on clean lines and superb balance.&nbsp; Vari=
+etal characteristics of the Chenin are more evident after 30 minutes of ai=
+r and are pronounced on the mid palate and lingering finish.&nbsp; 11.5% A=
+bV=2C drink now through 2023.<br>
+<br>
+<u>Yaacov Oryah=2C Eye of the Storm (<em>Ein HaSa&rsquo;ara</em>)=2C 2017=
+ [Advance Tasting]</u>:&nbsp; The wine&rsquo;s name is a nod toward to st=
+orm that was Yaacov&rsquo;s personal life for some time with grapes=2C the=
+ vineyard and winemaking keeping him grounded.&nbsp; Very similar to the 2=
+016 version below=2C the wine is a blend of Syrah (42%)=2C Grenache (36%)=
+=2C Mourv&egrave;dre (11%) and Cinsault (11%).&nbsp; However the 2017 saw=
+ a small percentage of new oak during the 12 month barrel-aging process an=
+d showcases darker fruit that=2C even though seems riper is more controlle=
+d with the wine presenting clean lines=2C tight structure and well balance=
+d between the rich dark red fruit=2C good acidity and near-elegant tannins=
+=2E Red plums=2C sour cherries and some currents are augmented with fresh-pa=
+ved road=2C graphite and roasted meat=2C combined with an herbal underlay=
+ and backed by savory and gripping tannins. Drink now through 2023.<br>
+<br>
+<u><img data-file-id=3D"3447489" height=3D"150" src=3D"https://gallery.mai=
+lchimp.com/4a8a53ce144d5f045511bf809/_compresseds/c715a666-1c50-47d1-8c26-=
+7c75d900d96e.jpg" style=3D"border: 0px none;width: 112px;height: 150px;mar=
+gin: 0px 5px 1px 0px;float: left;font-size: 14px;font-weight: bold;line-he=
+ight: 100%;outline: none;text-decoration: none;text-transform: capitalize;=
+display: inline;margin-bottom: 10px;" width=3D"112">Ya&rsquo;acov Oryah=2C=
+ Light from Darkness (<em>Or M&rsquo;Ofel</em>)=2C 2017</u>: In addition t=
+o the Grenache Noir=2C Cinsault=2C Syrah=2C and Mourv&egrave;dre included=
+ in the 2018 blend above=2C this wine included Tempranillo as well.&nbsp;=
+ The wine&rsquo;s name is basically Hebrew for <em>blanc de noir</em> (Lig=
+ht (wine) from Darkness (grapes)).&nbsp; More fruit forward and approachab=
+le than the 2016 below=2C the wine has lovely notes of tropical fruit=2C m=
+elon and citrus with less red fruit.&nbsp; A highly aromatic nose and medi=
+um bodied palate are both loaded to bear with citrus galore=2C slate miner=
+als and some stone summer fruits all backed with judicious acid impeccably=
+ balanced with the rich and slightly viscous fruit and hefty dose of miner=
+als.&nbsp; 11%AbV.&nbsp; Drink now through 2022.<br>
+<br>
+<u><img align=3D"right" data-file-id=3D"3447505" height=3D"150" src=3D"htt=
+ps://gallery.mailchimp.com/4a8a53ce144d5f045511bf809/_compresseds/93dbe06a=
+-ae9a-4557-a6ef-cd61efe3b74a.jpg" style=3D"border: 0px;width: 112px;height=
+: 150px;margin: 0px 0px 1px 5px;font-size: 14px;font-weight: bold;line-hei=
+ght: 100%;outline: none;text-decoration: none;text-transform: capitalize;d=
+isplay: inline;margin-bottom: 10px;" width=3D"112">Yaacov Oryah=2C Saign&e=
+acute;e d&rsquo;Orange=2C 2017</u>:&nbsp; Bled from the Alpha Omega Chenin=
+ Blanc above=2C the wine is 100% Chenin Blanc.&nbsp; When bleeding the jui=
+ce of red grapes=2C the result is a Rose while bleeding the juice of a whi=
+te grape yielded a wine that tastes like an orange wine while presenting l=
+ike a white one.&nbsp; Pronounced funk and the subtle viscosity of Yaacov&=
+rsquo;s orange wines=2C the wine showcases floral and mineral notes with t=
+he fruit subdued in the background.&nbsp; Nicely balancing acidity and spi=
+cy ginger notes round out the wine and give it some welcome complexity.&nb=
+sp; 11.5% AbV.&nbsp; Drink now.<br>
+<br>
+<u><img align=3D"left" data-file-id=3D"3447521" height=3D"150" src=3D"http=
+s://gallery.mailchimp.com/4a8a53ce144d5f045511bf809/_compresseds/5635a425-=
+0ce3-4a90-8a29-a8c837270212.jpg" style=3D"border: 0px;width: 112px;height:=
+ 150px;margin: 0px 5px 1px 0px;font-size: 14px;font-weight: bold;line-heig=
+ht: 100%;outline: none;text-decoration: none;text-transform: capitalize;di=
+splay: inline;margin-bottom: 10px;" width=3D"112">Ya&rsquo;acov Oryah=2C S=
+ilent Hunter (<em>HaTzayad HaShaket</em>)=2C 2017</u>: The wine is an unoa=
+ked blend of 60% S&eacute;millon and 40% Chenin Blanc (the two varietals t=
+hat Ya&rsquo;acov does best with) and the name is a nod to Australia&rsquo=
+;s Hunter Valley whose S&eacute;millon wines have extensive aging abilitie=
+s (Yaacov&rsquo;s 2009 &ldquo;Valley of the Hunters&rdquo; was made in tha=
+t style=2C as is his not-yet-released 2017 version). The wine was allowed=
+ to go through full malolactic fermentation that yielded a rich and unctuo=
+us wine=2C with plenty of delicious fruit kept in check by great tempering=
+ acidity. Loads of flinty minerals are accompanied by subtle tropical frui=
+t=2C dried summer stone fruit=2C heather and honeysuckle=2C along with som=
+e spice=2C pear and ginger. &nbsp;Lemon zest and more citrus are enhance b=
+y pleasing notes of white flowers=2C lemongrass=2C all well-balanced by br=
+acing acidity that ensures this rich and lovely wine stays crisp=2C vibran=
+t and refreshing all the way through the medium bodied palate to the long=
+ lingering and citrus-laden finish. Really a complex wine that is worth yo=
+ur time and patience to open up in the glass. Part of the wine was also ma=
+de into a sparkling wine=2C so stay tuned for some exciting sparklers comi=
+ng from Ya&rsquo;acov in a few years. At 11% AbV=2C the wine is great all=
+ day=2C every day and while it can be enjoyed mindlessly=2C denying the wi=
+ne some thoughtful contemplation would be missing out on a huge part of th=
+e experience. While enjoyable now=2C the wine has tons of evolution ahead=
+ of it=2C so I&rsquo;d suggest cellaring a few of your bottles to enjoy ov=
+er the years through 2028=2C likely longer.<br>
+<br>
+<u>Yaacov Oryah=2C SOB=2C 2017 [Advance Tasting]</u>:&nbsp; The wine is a=
+ private bottling and Yaacov kept one barrel for himself.&nbsp; An eccentr=
+ic blend of Grenache (22%)=2C Petite Sirah (21%)=2C Carignan (20%)=2C Pino=
+t Noir (19%) and Syrah (18%)=2C each component was added for a specific pu=
+rpose.&nbsp; The wine is obviously super young and needs time to come toge=
+ther.&nbsp; At this point there is plenty of ripe red fruit on both the no=
+se and palate alongside toasty oak (the wine was aged in one new 300 liter=
+ barrel and two one-year old barrels) and nice earthy minerals.&nbsp; The=
+ medium bodied palate is backed by gripping elegant tannins=2C with good a=
+cidity keeping things lively.&nbsp; Fruit forward and fun at this point=2C=
+ I&rsquo;d give the wine at least a year before opening=2C after which is=
+ should cellar through 2022=2C likely longer (given the uniqueness of the=
+ blend=2C I am erring on the side of caution here).<br>
+<br>
+<u>Yaacov Oryah=2C The Duke Pontiff=2C 2017 [Advance Tasting]</u>:&nbsp;=
+ Another wine name benefiting Yaacov&rsquo;s playful curiosity=2C the Duke=
+ refers to the <a href=3D"mailto:https://en.wikipedia.org/wiki/Duchy_of_Bu=
+rgundy" style=3D"color: #990000;font-weight: normal;text-decoration: under=
+line;">Duchy of Burgundy</a> which is represented by the Pinot Noir in the=
+ blend while Pontiff refers to the <a href=3D"mailto:Ch%C3%A2teauneuf-du-P=
+ape" style=3D"color: #990000;font-weight: normal;text-decoration: underlin=
+e;">Ch&acirc;teauneuf-du-Pape</a> appellation=2C whose style of wine is em=
+ulated in this blend of Rhone and Burgundy varietals (Pinot Noir (49%)=2C=
+ Syrah (21%)=2C Grenache (18%)=2C Mourv&egrave;dre (6%)=2C and Cinsault (6=
+%)).&nbsp; The wine spent 12 months aging as a blend on one year oak and p=
+resents with rich ripe red fruit=2C earthy minerals=2C some blueberries wh=
+ile the oak dominates more than many of Yaacov&rsquo;s other wines.&nbsp;=
+ Good acidity=2C gripping tannins give the medium to full bodied wine grea=
+t structure with tart red fruit=2C a pleasing bitter herbal underlay joine=
+d with rich dark chocolate=2C freshly cured tobacco leaf and some minty no=
+tes on the medium finish.&nbsp; That said=2C the wine is far from ready an=
+d the oak will integrate over the next 12-8 months so make sure to give it=
+ the time it deserves and then enjoy through 2022.<br>
+<br>
+<strong><u>2016</u></strong><br>
+<br>
+<u>Yaacov Oryah=2C Alpha Omega=2C 2016</u>:&nbsp; A blend of Roussanne=2C=
+ Semillon=2C and Viognier which spent three weeks macerating on its skins=
+ and 12 months aging in three-year old oak barrels (which were used as new=
+ oak for the 2014 Alpha Omega).&nbsp; The rich and somewhat extracted wine=
+ has a lovely nose of sweet tropical fruits including guava and pineapple=
+ alongside gobs of juicy citrus notes=2C slate minerals=2C blooming white=
+ flowers=2C brown spices and some caramel.&nbsp; The medium bodied palate=
+ has more rich fruit with plenty of citrus and sweet minerals backed by gr=
+eat acidity and an impeccably balanced structure.&nbsp; Tight and focused=
+ with precise fruit and a pleasing roundness to it=2C the wine is enjoyabl=
+e now and benefits from about 45 minutes of air and should cellar nicely t=
+hrough 2024.<br>
+<br>
+<u><img align=3D"right" data-file-id=3D"3447569" height=3D"175" src=3D"htt=
+ps://gallery.mailchimp.com/4a8a53ce144d5f045511bf809/_compresseds/a8bde044=
+-324c-45b1-96ef-885f1513908e.jpg" style=3D"border: 0px;width: 82px;height:=
+ 175px;margin: 0px 0px 1px 5px;font-size: 14px;font-weight: bold;line-heig=
+ht: 100%;outline: none;text-decoration: none;text-transform: capitalize;di=
+splay: inline;margin-bottom: 10px;" width=3D"82">Yaacov Oryah=2C Alpha Ome=
+ga=2C Jemma=2C Brut=2C 2016</u>:&nbsp; Made exclusively for the Tel-Aviv r=
+estaurant Brut (with whom Yaacov has a close relationship) and named for t=
+he eatery&rsquo;s co-founder &ndash; Jemma Naveh.&nbsp; An Orange-styled w=
+ine made from 100% Semillon=2C the wine needs hours and hours of air and i=
+s enjoyable every step of the way while being educational as well.&nbsp; W=
+ith a plush medium to full-bodied palate=2C the wine showcases loads of wa=
+rm spices=2C roasted nuts=2C fresh-turned earth and earthy mineral notes u=
+nder plenty of funky orange notes=2C wild mushrooms=2C smoke=2C candied al=
+monds=2C smoky wood=2C and dried tropical fruit.&nbsp; Spice and dried nut=
+s linger long with brilliant acidity keeping things interesting.&nbsp; Rea=
+lly interesting and enjoyable wine that will pair well with a near-endless=
+ array of foods.&nbsp; Drink now through 2021.<br>
+<br>
+<u><img align=3D"left" data-file-id=3D"3447485" height=3D"150" src=3D"http=
+s://gallery.mailchimp.com/4a8a53ce144d5f045511bf809/_compresseds/623968d6-=
+8675-41bd-8e8c-3099f443bda6.jpg" style=3D"border: 0px;width: 112px;height:=
+ 150px;margin: 0px 5px 1px 0px;font-size: 14px;font-weight: bold;line-heig=
+ht: 100%;outline: none;text-decoration: none;text-transform: capitalize;di=
+splay: inline;margin-bottom: 10px;" width=3D"112">Yaacov Oryah=2C Eye of t=
+he Storm (<em>Ein HaSa&rsquo;ara</em>)=2C 2016</u>:&nbsp; Yaacov&rsquo;s G=
+SM has become a regular part of his portfolio and the 2016 is more reminis=
+cent of his delightful 2016 than the 2015 version.&nbsp; The wine spent 12=
+ months in oak given it some pleasing smoky notes in addition to the rich=
+ red fruit (which was slightly ripe for me without being sweet)=2C backed=
+ by gripping tannins that need time to integrate and good acidity keeping=
+ the fruit well balanced while the oak remains in the background.&nbsp; Sa=
+vory notes of roasted meat=2C asphalt and leather are joined by earthy min=
+erals=2C freshly cracked black pepper=2C earthy minerals and some herbal n=
+otes all blend together and yield a food-friendly wine with more mainstrea=
+m appeal that many of Yaacov&rsquo;s other wines.&nbsp; 13.5% AbV. Drink n=
+ow through 2023.<br>
+<br>
+<u><img align=3D"right" data-file-id=3D"3447473" height=3D"150" src=3D"htt=
+ps://gallery.mailchimp.com/4a8a53ce144d5f045511bf809/_compresseds/b77d3cb7=
+-34dc-4256-8727-7365e07281db.jpg" style=3D"border: 0px;width: 112px;height=
+: 150px;margin: 0px 0px 1px 5px;font-size: 14px;font-weight: bold;line-hei=
+ght: 100%;outline: none;text-decoration: none;text-transform: capitalize;d=
+isplay: inline;margin-bottom: 10px;" width=3D"112">Ya&rsquo;acov Oryah=2C=
+ Light from Darkness (<em>Or M&rsquo;Ofel</em>)=2C 2016</u>: Maintaining a=
+ reputation for quality experimentation=2C the wine&rsquo;s name reflects=
+ the creating of a white wine from three Rh&ocirc;ne Valley red varietals=
+ (Grenache=2C Cinsault and Mourv&egrave;dre)=2C accomplished by not allowi=
+ng the juice any skin contact whatsoever (all grape juices are clear &ndas=
+h; the color comes from skin=2C stems and other parts). As a wine geek I a=
+m always excited to taste wines made in a new or interesting manner=2C man=
+y of which aren&rsquo;t the most delicious of options and I was happy to f=
+ind this wine didn&rsquo;t fit into that category &ndash; it&rsquo;s reall=
+y a yummy wine (in addition to the coolness of having typical red wine not=
+es in a white wine). The nose is redolent with mulberry=2C raspberry=2C re=
+d cherry along with white flowers=2C red grapefruit and lime with a hint o=
+f bitter green and flinty minerals. The medium to full bodied palate is mo=
+re robust than you&rsquo;d expect with great acidity balancing out the ric=
+h and deep fruits with plentiful lip-smacking citrus and savory minerals o=
+n the mid palate leading into the lingering finish where some bitter grape=
+fruit pith leaves a tantalizing reminder of the delicious treat. 11.5% AbV=
+=2E&nbsp; Enjoyable now through the middle of 2019.<br>
+<br>
+<strong><u>2014</u></strong>
+
+<div style=3D"text-align: left;color: #000000;font-family: &quot;Lato&quot=
+;=2Csans-serif;font-size: 14px;font-weight: 400;line-height: 150%;"><u><im=
+g data-file-id=3D"3447561" height=3D"200" src=3D"https://gallery.mailchimp=
+=2Ecom/4a8a53ce144d5f045511bf809/_compresseds/d5658059-5153-4eb3-8c92-ccb461=
+bc16b4.jpg" style=3D"border: 0px none;width: 77px;height: 200px;margin: 0p=
+x 5px 1px 0px;float: left;font-size: 14px;font-weight: bold;line-height: 1=
+00%;outline: none;text-decoration: none;text-transform: capitalize;display=
+: inline;margin-bottom: 10px;" width=3D"77">Yaacov Oryah=2C Alpha Omega=2C=
+ 2014</u>:&nbsp; A limited edition (less than 300 bottles) blend of Roussa=
+nne=2C Viognier and S&eacute;millon that was prepared like an Orange Wine=
+ and was allowed to macerate on its skins for over two months (73 days) yi=
+elding a rich=2C bold and funky wine that I found to be fascinating <img a=
+lign=3D"right" data-file-id=3D"3447565" height=3D"175" src=3D"https://gall=
+ery.mailchimp.com/4a8a53ce144d5f045511bf809/_compresseds/41596e6e-954d-437=
+d-9eea-8fa85d224f56.jpg" style=3D"border: 0px;width: 75px;height: 175px;ma=
+rgin: 0px 0px 1px 5px;font-size: 14px;font-weight: bold;line-height: 100%;=
+outline: none;text-decoration: none;text-transform: capitalize;display: in=
+line;margin-bottom: 10px;" width=3D"75">but won&rsquo;t be to everyone&rsq=
+uo;s taste.&nbsp; With his first attempt at Orange wine spending just two=
+ weeks on the skins=2C the Alpha Omega represents a quantum leap forward i=
+n this regard.&nbsp; Using the biblical &ldquo;<em>HaKol Kol Yaacov VeHaYa=
+dayim Yedei Eisav</em>&rdquo; (&ldquo;the voice is the voice of Yaacov=2C=
+ yet the hands are the hands of Esauv&rdquo;) wouldn&rsquo;t be inappropri=
+ate in this case.&nbsp; A rich aromatic nose is redolent with rich orange=
+ and lemon=2C honeysuckle=2C candied citrus peel=2C scented candles=2C a w=
+hiff of oily petrol=2C jasmine=2C lavender and crazily enough &ndash; subt=
+le notes of smoked meat.&nbsp; The medium bodied and layered palate has a=
+ slightly oily feel to it that is backed up with plenty of acidity that al=
+so keeps the rich fruit in check and a completely unnerving tannic structu=
+re that can provide whiplash if you aren&rsquo;t expecting it.&nbsp; Ever=
+ more than the 2016=2C the dissonance between nose and palate can be unner=
+ving.&nbsp; With gun smoke=2C melon=2C tart green apple and more juicy cit=
+rus alongside oxidized notes=2C the wine toys with your senses and reveals=
+ layers and layers of notes as time passes by.&nbsp; A long and lingering=
+ slightly tart and savory finish with an overlay of orange blossom rounds=
+ out this incredibly different (and delicious) wine.&nbsp; Made in Yaacov&=
+rsquo;s house without any formal <em>hashgacha</em>=2C the wine doesn&rsqu=
+o;t carry any kosher symbols but like his prior wines=2C he vouches for it=
+=2C which was enough for me.&nbsp; 13% AbV.&nbsp; Definitely a must try an=
+d still needs 1-2 hours in the decanter before it reveals all it has to of=
+fer=2C the wine should continue to evolve through 2021=2C likely longer.</=
+div>
+<br>
+<u>Yaacov Oryah=2C Eye of the Storm=2C 2014</u>:&nbsp; A blend of Grenache=
+=2C Syrah=2C Mourvedre=2C petite Sirah=2C Cinsault and Barbera that someho=
+w really works together=2C combining for a delicious (and smoky) experienc=
+e.&nbsp; While enjoyable as a simple beverage=2C the wine really deserves=
+ some quiet contemplation as the layers of complex flavors and nuances are=
+ practically outrageous.&nbsp; Give the wine the time and effort it deserv=
+es and you will be richly rewarded with loads of rich red forest fruit=2C=
+ hints of boysenberries with loads of floral notes and a backbone of rich=
+ saline minerals=2C roasted meat and grilled bacon.&nbsp; Warm spices=2C l=
+avender and slightly bitter herbs add plenty of nuance.&nbsp; Black pepper=
+=2C graphite and some freshly turned earth show up after a while leading i=
+nto a lingering finish with plenty of warm spices leaving you wanting more=
+=2E&nbsp; Drink now through 2022.<br>
+<br>
+<strong><u>2011</u></strong><br>
+<br>
+<u>Yaacov Oryah=2C Iberian Dream=2C Reserva=2C 2011</u>:&nbsp; Named for t=
+he Spain&rsquo;s ancient Aramaic name (Aspania) and using the Talmudic exp=
+ression for unrealistic dreams=2C the wine is a blend of Tempranillo=2C Gr=
+enache and Carignan.&nbsp; The only difference between this wine and the G=
+ran Reserva reviewed below is the oak aging.&nbsp; This wine spent 12 mont=
+hs in five-year-old (neutral) oak (while the Gran Reserva spent three year=
+s).&nbsp; Still tight with tannins that need some time to integrate=2C the=
+ wine was even more enjoyable the next day.&nbsp; Loaded with rich deep an=
+d dark black fruit=2C earthy minerals=2C dark bakers chocolate and some no=
+tes of smoky oak the full-bodied palate is rich=2C velvety and caressing.&=
+nbsp; Very much an old world wine made from new world terroir.&nbsp; Darke=
+r and more brooding than the Gran Reserva=2C the wine is finally coming in=
+to its own and only requires 2-3 hours at this point in order to be reward=
+ed with great balance and structure along with a voluptuous wine that pamp=
+ers.&nbsp; Drink now through 2022.<br>
+<br>
+<u>Yaacov Oryah=2C Iberian Dream=2C Gran Reserva=2C 2011</u>:&nbsp; The sa=
+me wine as the Reserva above that spent three years in oak as opposed to o=
+ne.&nbsp; The extra time yielded a wine that is far more approachable and=
+ polished while retaining a decent aging ability.&nbsp; Rich and near swee=
+t=2C mostly black fruit on both the nose and medium to full-bodied palate.=
+&nbsp; Nicely integrated yet very powerful tannins hold the rich fruit tog=
+ether in a harmonious blend with the tart cranberry=2C deep spices=2C plen=
+ty of rich chocolate=2C pungent forest notes and lovely earthy minerals th=
+at are so reminiscent of true Spanish Rioja=2C it is shocking to think tha=
+t these are Israeli grapes.&nbsp; Beg Yaacov to sell you a few bottles of=
+ this treat but be prepared for rejection=2C as the quantities are so minu=
+scule as to be non-existent.&nbsp; Drink now through 2021.<br>
+<br>
+<strong><u>2009</u></strong><br>
+<br>
+<u>Yaacov Oryah=2C Valley of the Hunters=2C Semillon=2C 2009</u>:&nbsp; In=
+tended from the get-go to be released only after a few years=2C Yaacov har=
+vested these S&eacute;millon grapes extra early.&nbsp; Ultimately the wine=
+ was released earlier than intended in minute quantities with Yaacov then=
+ [re]acquiring the remaining stock and cellaring it privately until he fe=
+lt it was ready &ndash; a time that has finally arrived.&nbsp; Despite bei=
+ng completely unoaked=2C the 100% S&eacute;millon wine has some oaky notes=
+=2E&nbsp; Named after Australia&rsquo;s Hunter Valley dubbed by Jancis Robin=
+son to be Australia&rsquo;s greatest gift to the wine world based on the o=
+utrageous S&eacute;millon it produces=2C the wine certainly serves its nam=
+esake proud.&nbsp; The wine has a rich and layered nose of tart green appl=
+e=2C white summer fruits=2C red grapefruit=2C sweet nectarines=2C rich May=
+er lemons=2C warm spices and limestone minerals.&nbsp; The medium bodied p=
+alate has 11% AbV and plenty more rich fruit=2C sweet honey=2C warm spices=
+=2C saline and more minerals backed up by decent acidity that has lost som=
+e of its bite over the last few years.&nbsp; I loved the wine and was happ=
+y to have the entire bottle to myself=2C which allowed me to enjoy its evo=
+lution over the many hours it keep=2C me company.&nbsp; Still vibrant with=
+ great acidity=2C the wine is going strong but is unlikely to evolve furth=
+er=2C so I&rsquo;d drink now (unless you have a lot of bottles=2C in which=
+ case I&rsquo;d drink one a year until they are gone or start to notably d=
+ecline).<br>
+<br>
+<strong><u>2008</u></strong><br>
+<br>
+<u><img align=3D"left" data-file-id=3D"3447481" height=3D"200" src=3D"http=
+s://gallery.mailchimp.com/4a8a53ce144d5f045511bf809/_compresseds/d26a8d4e-=
+abea-461a-908a-e2b568ec76d3.jpg" style=3D"border: 0px;width: 150px;height:=
+ 200px;margin: 0px 5px 1px 0px;font-size: 14px;font-weight: bold;line-heig=
+ht: 100%;outline: none;text-decoration: none;text-transform: capitalize;di=
+splay: inline;margin-bottom: 10px;" width=3D"150">Yaacov Oryah=2C Old Musk=
+eteer=2C 2008 (8 Year)</u>: With a day job making clean and well-crafted w=
+ines for Psagot=2C Yaacov Oryah expresses his well-deserved reputation of=
+ unconventionality in the growing portfolio of wines bottled under his&nbs=
+p;<a href=3D"https://yossiescorkboard.us10.list-manage.com/track/click?u=
+=3D4a8a53ce144d5f045511bf809&id=3Dc6c06b8119&e=3D560aece2e5" style=3D"col=
+or: #990000;font-weight: normal;text-decoration: underline;">eponymous lab=
+el</a>.&nbsp; While I am not yet convinced of the merit behind his planned=
+ focus on orange wines=2C I certainly appreciate the non-conventional wine=
+making method and m&eacute;lange of wines produced.&nbsp; Currently only a=
+vailable in Israel directly from Yaacov=2C these are certainly wines well-=
+worth seeking out and bringing back to enjoy.&nbsp; After revamping the po=
+rt-style offering from Psagot (now marketed as &ldquo;Devine&rdquo; and af=
+ter a serious qualitative upgrade=2C is well worth seeking out as well)=2C=
+ Yaacov serves up one of the most intriguing dessert wines I have enjoyed=
+ to date.&nbsp; A limited edition of 1=2C000 bottles=2C the wine is late h=
+arvested Muscat of Alexandria spent seven years aging in used oak barrels=
+ before being blended with 6% 2015 Chardonnay which provided acidity to ba=
+ck up the rich sweetness and balanced out the oxidized notes that give the=
+ wine its complexity and testify to its potential longevity.&nbsp; The lon=
+g-term aging is intended to allow the wine to slowly mature and oxidize pr=
+oviding it with complex flavors while also protecting it from future deter=
+ioration due to oxidization=2C thus prolonging its ageability. &nbsp;Addit=
+ional wines remains in barrels and Yaacov will likely bottle it in a few y=
+ears as the wine continues to develop in the barrels.&nbsp; A lively and a=
+romatic nose and a full bodied and rich palate back by good acidity are bo=
+th redolent of honeysuckle=2C blooming white flowers=2C cr&egrave;me br&uc=
+irc;l&eacute;e=2C toasted hazelnuts=2C white chocolate=2C candied lemons=
+=2C a hint of white pepper and expressive notes of tropical fruit all bala=
+nced by warm spices and spicy oak and a long lingering sweet finish that i=
+s enhanced by great spices and more developing complexity. 15.9% AbV.&nbsp=
+; Drink now through 2035=2C likely longer<br>
+<br>
+<u>Yaacov Oryah=2C Old[er] Musketeer=2C 2008 (10 Year)</u>: &nbsp;As ment=
+ioned above=2C Yaacov initially bottled two of the ten barrels he made of=
+ this incredible wine.&nbsp; In honor of the very special dinner we both a=
+ttended prior to KFWE London=2C Yaacov acquiesced to my request and brough=
+t with him a barrel sample of the wine having aged for two additional year=
+s in the barrel.&nbsp; Following the incredible showing of the wine=2C Yaa=
+cov has decided to do a commercial barreling of the wine representing the=
+ ten-year=2C with subsequent bottling following once a year or every two y=
+ears.&nbsp; As incredible as the 8-Year is=2C the 10-Year was so much bett=
+er it was unbelievable=2C showcasing the incredible impact oxidization can=
+ have on a wine when used properly.&nbsp; There was less maple sugar and c=
+aramel on the nose while showing more pronounced notes of toasted nuts=2C=
+ intense heathered flowers and white chocolate alongside the delectable ri=
+ch tropical fruits and citrus on the viscous palate.&nbsp; I use the words=
+ impeccable balance to describe many of Yaacov&rsquo;s wines but here it w=
+as simply perfect harmony between the rich fruit=2C musky sugar=2C savory=
+ nuts and great acidity backing it all up.&nbsp; Easily one of the best de=
+ssert wines of my life.&nbsp; Pounce on this as soon as it becomes availab=
+le &ndash; I promise you won&rsquo;t regret it.</div>
+=09=09=09=09=09=09=09=09=09=09=09=09=09=09</td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standa=
+rd Content \\ -->
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Body \\ -->
+                                </td>
+                            </tr>
+                        =09<tr>
+                            =09<td align=3D"center" valign=3D"top">
+                                    <!-- // Begin Template Footer \\ -->
+                                =09<table border=3D"0" cellpadding=3D"10"=
+ cellspacing=3D"0" width=3D"100%" id=3D"templateFooter" style=3D"backgroun=
+d-color: #5e2018;border-top: 0;">
+                                    =09<tr>
+                                        =09<td valign=3D"top" class=3D"foo=
+terContent">
+
+                                                <!-- // Begin Module: Stan=
+dard Footer \\ -->
+                                                <table border=3D"0" cellpa=
+dding=3D"10" cellspacing=3D"0" width=3D"100%">
+                                                    <tr>
+                                                        <td colspan=3D"2"=
+ valign=3D"middle" id=3D"social" style=3D"background-color: #5e2018;border=
+-bottom: 1px solid #eedabc;">
+                                                            <div style=3D"=
+color: #eedabc;font-family: &quot;Lato&quot;=2Csans-serif;font-weight: 300=
+;font-size: 12px;line-height: 125%;text-align: center;"><a href=3D"Twitter=
+ Account not yet Authorized" target=3D"_blank" style=3D"color: #cc3333;fon=
+t-weight: 400;text-decoration: none;word-wrap: normal;">&nbsp;</a><a href=
+=3D"https://yossiescorkboard.us10.list-manage.com/track/click?u=3D4a8a53ce=
+144d5f045511bf809&id=3D46ac86b5ec&e=3D560aece2e5" target=3D"_blank" style=
+=3D"color: #cc3333;font-weight: 400;text-decoration: none;word-wrap: norma=
+l;">Follow @yossieuncorked on Twitter</a>&nbsp; | <a href=3D"http://www.fa=
+cebook.com/share.php?u=3Dhttps%3A%2F%2Fmailchi.mp%2Fyossiescorkboard%2Fyos=
+sies-wine-recommendations-375-orange-is-the-new-black&t=3DYossie%27s%20Win=
+e%20Recommendations%20%23375%20-%20Orange%20is%20the%20new%20Black" target=
+=3D"_blank" style=3D"color: #cc3333;font-weight: 400;text-decoration: none=
+;word-wrap: normal;">Share on Facebook</a> | <a href=3D"http://twitter.com=
+/intent/tweet?text=3DYossie%27s%20Wine%20Recommen...%20-%20https%3A%2F%2Fm=
+ailchi.mp%2Fyossiescorkboard%2Fyossies-wine-recommendations-375-orange-is-=
+the-new-black" target=3D"_blank" style=3D"color: #cc3333;font-weight: 400;=
+text-decoration: none;word-wrap: normal;">Share on Twitter</a>&nbsp; | &nb=
+sp;<a href=3D"http://us10.forward-to-friend.com/forward?u=3D4a8a53ce144d5f=
+045511bf809&id=3D27e2c21987&e=3D560aece2e5" style=3D"color: #cc3333;font-wei=
+ght: 400;text-decoration: none;word-wrap: normal;">Forward to a friend</a>=
+&nbsp;</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign=3D"top"=
+ width=3D"85%">
+                                                            <br>
+                                                           <div style=3D"c=
+olor: #eedabc;font-family: &quot;Lato&quot;=2Csans-serif;font-weight: 300;=
+font-size: 12px;line-height: 125%;text-align: left;">
+ <em>Copyright</em> =C2=A9 2019 Yossie's Corkboard=2C All rights reserved.=
+<br>
+You are receiving this email as a former subscriber to Yossie's Corkboard=
+ from Google Groups or because you subscribed from my website (<a href=3D"=
+http://www.yossiescorkboard.com/">www.yossiescorkboard.com</a>).<br>
+</div>
+                                                            <br>
+                                                        </td>
+                                                        <td valign=3D"top"=
+ width=3D"15%" id=3D"monkeyRewards">
+                                                            <br>
+                                                            <div style=3D"=
+color: #eedabc;font-family: &quot;Lato&quot;=2Csans-serif;font-weight: 300=
+;font-size: 12px;line-height: 125%;text-align: left;">
+</div>
+                                                            <br>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td colspan=3D"2"=
+ valign=3D"middle" id=3D"utility" style=3D"background-color: #5e2018;borde=
+r-top: 1px solid #eedabc;">
+                                                            <div style=3D"=
+color: #eedabc;font-family: &quot;Lato&quot;=2Csans-serif;font-weight: 300=
+;font-size: 12px;line-height: 125%;text-align: center;">&nbsp;<a href=3D"h=
+ttps://yossiescorkboard.us10.list-manage.com/unsubscribe?u=3D4a8a53ce144d5=
+f045511bf809&id=3D48e1b2a353&e=3D560aece2e5&c=3D27e2c21987" style=3D"color:=
+ #cc3333;font-weight: 400;text-decoration: none;word-wrap: normal;">unsubs=
+cribe from this list</a> | <a href=3D"https://yossiescorkboard.us10.list-m=
+anage.com/profile?u=3D4a8a53ce144d5f045511bf809&id=3D48e1b2a353&e=3D560aece2e5" style=3D"color: #cc3333;font-weight: 400;text-decoration: none;word-wr=
+ap: normal;">update subscription preferences</a><!--
+ --> | <a href=3D"https://mailchi.mp/yossiescorkboard/yossies-wine-recomme=
+ndations-375-orange-is-the-new-black?e=3D560aece2e5" style=3D"color: #cc3333=
+;font-weight: 400;text-decoration: none;word-wrap: normal;">view email in=
+ browser</a><!--
+ -->&nbsp;</div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!-- // End Module: Standa=
+rd Footer \\ -->
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // End Template Footer \\ -->
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    <img src=3D"https://yossiescorkboard.us10.list-manage.com/track/open.p=
+hp?u=3D4a8a53ce144d5f045511bf809&id=3D27e2c21987&e=3D560aece2e5" height=
+=3D"1" width=3D"1"></body>
+</html>
+--_----------=_MCPart_1859836514--
